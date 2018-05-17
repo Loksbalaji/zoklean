@@ -20,10 +20,8 @@ This project is a PERN starter kit with the popular react-redux framework using 
 
 ## Get Started
 - Run `git clone https://github.com/Loksbalaji/zoklean.git`
-- Setup project using `npm run setup`
-- Install Postgresql using `brew install postgresql`
-- Run `npm install -g sequelize-cli` to use database helper (optional)
-- Update `client/index.html` and `package.json` to your project name
+- Install dependencies using `npm install`
+- Build the project using `npm run build`
 
 ## Script
 |Command            |Description|
