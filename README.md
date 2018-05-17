@@ -19,7 +19,7 @@ This project is a PERN starter kit with the popular react-redux framework using 
 - [x] I18n
 
 ## Get Started
-- Run `git clone https://github.com/johnsiah/react-redux-starter-kit`
+- Run `git clone https://github.com/Loksbalaji/zoklean.git`
 - Setup project using `npm run setup`
 - Install Postgresql using `brew install postgresql`
 - Run `npm install -g sequelize-cli` to use database helper (optional)
