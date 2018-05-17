@@ -4,7 +4,7 @@ import { FormattedMessage } from "react-intl"
 import "./HomeStyles.css"
 
 const Home = ({ switchLanguage }) => (
-    <div>
+    <div className="container">
         <FormattedMessage id="Home.title" />
         <div // eslint-disable-line
             onClick={() => switchLanguage("en")}>Switch to English</div>
