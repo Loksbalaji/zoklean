@@ -4,6 +4,7 @@ import style from "./style.css";
 
 import ZokleanIntro from "./innerSections/zokleanIntro.jsx";
 import MeetOurPartners from "./innerSections/meetPartners.jsx";
+import ZokleanHighlights from "./innerSections/zokleanHighlights.jsx";
 
 class HomePage extends React.Component {
   constructor() {
@@ -15,6 +16,7 @@ class HomePage extends React.Component {
       <div>
         <ZokleanIntro />
         <MeetOurPartners />
+        <ZokleanHighlights />
       </div>
     );
   }
