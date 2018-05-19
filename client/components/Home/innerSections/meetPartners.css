@@ -1,0 +1,31 @@
+.meetPartners-outer-wrapper {
+  background: #efefef;
+  padding: 20px 0px;
+}
+.mp-heading-holder {
+  padding: 20px 0px;
+}
+.mp-heading-holder h3 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.parnerImgHolder {
+  height: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+.parnerImgHolder .img-fluid {
+  max-height: 100%;
+}
+.partnerDetailsBox {
+  background: #fff;
+  padding-top: 5px;
+  border-radius: 3px;
+}
+.partnerDetailsBox h4 {
+  padding: 25px 0px 10px 0;
+}
+.partnerDetailsBox p {
+  padding: 0px 0px 20px 0px;
+}

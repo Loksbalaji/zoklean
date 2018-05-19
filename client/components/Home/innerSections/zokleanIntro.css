@@ -1,0 +1,30 @@
+.txtCenter {
+  text-align: center;
+}
+.banner2-outer-wrapper {
+  background: #efefef;
+  padding: 0 0 20px 0px;
+}
+.banner2-circle-img {
+  max-width: 100%;
+}
+.baaner2-introPara {
+  padding: 20px 0px;
+}
+.imgHolder {
+  padding: 20px 0px;
+}
+.baaner2-introPara {
+  font-size: 25px;
+  text-align: center;
+}
+.banner2-coltit {
+  text-align: center;
+  font-weight: 500;
+  color: #484848;
+}
+.banner2-colPara {
+  text-align: center;
+  font-size: 17px;
+  color: #787878;
+}
