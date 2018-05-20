@@ -33,7 +33,7 @@
   border-radius: 5px;
   color: #555;
   margin: 20px 0px;
-  font-size: 25px;
+  font-size: 1.5em;
 }
 .zkHighlightSectionOuterWrapper .zkgreen-cta-butt {
   background: #00eec4;
@@ -43,7 +43,7 @@
   padding: 15px 4%;
   width: 90%;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: bold;
   border: none;
 }

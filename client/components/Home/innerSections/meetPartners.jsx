@@ -15,11 +15,11 @@ class MeetOurPartners extends Component {
           <div className="container">
             <div className="row">
               <div className="mp-heading-holder">
-                <h3>Meet Our Partners...</h3>
+                <h3 className="container">Meet Our Partners...</h3>
               </div>
             </div>
             <div className="row">
-              <div className="col-sm-3 col-md-6 col-lg-4">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="container partnerDetailsBox">
                   <div className="parnerImgHolder">
                     <img
@@ -37,7 +37,7 @@ class MeetOurPartners extends Component {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-3 col-md-6 col-lg-4">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="container partnerDetailsBox">
                   <div className="parnerImgHolder">
                     <img
@@ -55,7 +55,7 @@ class MeetOurPartners extends Component {
                   </p>
                 </div>
               </div>
-              <div className="col-sm-3 col-md-6 col-lg-4">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="container partnerDetailsBox">
                   <div className="parnerImgHolder">
                     <img

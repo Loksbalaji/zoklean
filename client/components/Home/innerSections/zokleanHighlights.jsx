@@ -14,13 +14,13 @@ class ZokleanHighlights extends Component {
         <div className="zkHighlightSectionOuterWrapper">
           <div className="container">
             <div className="row">
-              <div className="col-sm-2 col-md-7 col-lg-7 nopadding">
+              <div className="col-sm-12 col-md-12 col-lg-7 nopadding">
                 <img
                   src="http://easybreezyclean.com/assets/asset-1454628881237.png?v=0.7574441405013204"
                   alt=""
                 />
               </div>
-              <div className="col-sm-3 col-md-5 col-lg-5 nopadding">
+              <div className="col-sm-12 col-md-12 col-lg-5 nopadding">
                 <div className="highlights-content-holder">
                   <div className="container">
                     <div className="bullet-points">

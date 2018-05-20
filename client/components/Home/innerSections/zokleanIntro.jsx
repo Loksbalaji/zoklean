@@ -16,7 +16,7 @@ class ZokleanIntro extends Component {
             <div className="row">
               <div className="baaner2-introPara">
                 <div className="row justify-content-center text-xs-center">
-                  <div className="col-9">
+                  <div className="col-11">
                     At Zoklean, you can schedule the best local cleaning
                     companies instantly at fixed price. We offer cleaning
                     services on demand with professionals you can trust. Don't
@@ -26,7 +26,7 @@ class ZokleanIntro extends Component {
               </div>
             </div>
             <div className="row banner2-lightCols">
-              <div className="col-sm-3 col-md-6 col-lg-4">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter">
                     <img
@@ -41,7 +41,7 @@ class ZokleanIntro extends Component {
                   Get a fixed rate instantly through a modern platform
                 </p>
               </div>
-              <div className="col-sm-3 col-md-6 col-lg-4">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter">
                     <img
@@ -59,7 +59,7 @@ class ZokleanIntro extends Component {
                   that they're legit
                 </p>
               </div>
-              <div className="col-sm-3 col-md-6 col-lg-4">
+              <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter">
                     <img
