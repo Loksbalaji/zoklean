@@ -27,7 +27,7 @@ class FindusNearyou extends Component {
                 />
               </div>
             </div>
-            <div className="row zoklean-violet-gradientbg fus-content-wrapper">
+            <div className="row violet-gradientbg-light fus-content-wrapper">
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="container">
                   <div className="locationImageHolder">

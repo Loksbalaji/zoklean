@@ -6,6 +6,8 @@ import ZokleanIntro from "./innerSections/zokleanIntro.jsx";
 import MeetOurPartners from "./innerSections/meetPartners.jsx";
 import ZokleanHighlights from "./innerSections/zokleanHighlights.jsx";
 import FindusNearyou from "./innerSections/findusNearyou.jsx";
+import ClientsCorner from "./innerSections/clientsCorner.jsx";
+import Footer from "../Footer";
 
 class HomePage extends React.Component {
   constructor() {
@@ -19,6 +21,8 @@ class HomePage extends React.Component {
         <MeetOurPartners />
         <ZokleanHighlights />
         <FindusNearyou />
+        <ClientsCorner />
+        <Footer />
       </div>
     );
   }
