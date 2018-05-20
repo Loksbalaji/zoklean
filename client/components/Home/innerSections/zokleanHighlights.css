@@ -1,0 +1,49 @@
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.zkHighlightSectionOuterWrapper {
+  padding: 50px 0px 60px 0px;
+  background: #efefef;
+}
+.highlights-content-holder {
+  background-image: linear-gradient(
+    to right bottom,
+    #8000bf,
+    #960bc4,
+    #ab17ca,
+    #bf23cf,
+    #d22ed4
+  );
+}
+.zkHighlightSectionOuterWrapper .bullet-points {
+  width: 100%;
+}
+.zkHighlightSectionOuterWrapper .bullet-points ul {
+  width: 90%;
+  list-style: none;
+  margin: 20px 5% 0;
+  padding: 0;
+  display: inline-block;
+}
+.zkHighlightSectionOuterWrapper .bullet-points ul li {
+  background: #fff;
+  padding: 10px 4%;
+  width: 100%;
+  border-radius: 5px;
+  color: #555;
+  margin: 20px 0px;
+  font-size: 25px;
+}
+.zkHighlightSectionOuterWrapper .zkgreen-cta-butt {
+  background: #00eec4;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px 5% 39px 5%;
+  padding: 15px 4%;
+  width: 90%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+}

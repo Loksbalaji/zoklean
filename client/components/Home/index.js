@@ -5,6 +5,7 @@ import style from "./style.css";
 import ZokleanIntro from "./innerSections/zokleanIntro.jsx";
 import MeetOurPartners from "./innerSections/meetPartners.jsx";
 import ZokleanHighlights from "./innerSections/zokleanHighlights.jsx";
+import FindusNearyou from "./innerSections/findusNearyou.jsx";
 
 class HomePage extends React.Component {
   constructor() {
@@ -17,6 +18,7 @@ class HomePage extends React.Component {
         <ZokleanIntro />
         <MeetOurPartners />
         <ZokleanHighlights />
+        <FindusNearyou />
       </div>
     );
   }
