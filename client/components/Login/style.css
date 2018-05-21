@@ -1,0 +1,33 @@
+.login-form-wrapper h1 {
+  font-size: 1.8rem;
+  color: #666;
+  margin: 50px 0px 30px 0px;
+}
+.login-form-wrapper .loginForm-icon-holder,
+.login-form-wrapper p {
+  text-align: center;
+}
+.loginForm-icon-holder img {
+  max-width: 60px;
+}
+.input-row {
+  margin: 30px 0px;
+}
+.input-row input.form-control {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.1em;
+}
+.input-row input::placeholder {
+  color: #aaa;
+}
+.input-row .greenBut {
+  background: #00d0aa;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.9rem 0;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3em;
+}
