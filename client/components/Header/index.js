@@ -26,7 +26,7 @@ class Header extends React.Component {
                       </a>
                     </div>
                     <div className="col-sm-6 col-md-6 col-lg-3">
-                      <a className="signupLink" href="">
+                      <a className="signupLink" href="/signup">
                         Sign Up
                       </a>
                     </div>

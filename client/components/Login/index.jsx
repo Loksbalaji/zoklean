@@ -17,12 +17,7 @@ class Login extends React.Component {
         <Header />
         <div className="container">
           <div className="row">
-            <div className="col-sm-12 col-md-6 col-lg-6 nopadding">
-              <img
-                src="https://ae01.alicdn.com/kf/HTB1AGZVLFXXXXc0XFXXq6xXFXXXz/New-Arrival-2016-Summer-Fashion-OL-Styles-Work-Suits-With-Jackets-And-Skirt-Professional-Formal-Ladies.jpg"
-                alt=""
-              />
-            </div>
+            <div className="col-sm-12 col-md-6 col-lg-6 row-eq-height nopadding promo-section" />
             <div className="col-sm-12 col-md-6 col-lg-6">
               <div className="login-form-wrapper">
                 <div className="row justify-content-center">
@@ -76,19 +71,19 @@ class Login extends React.Component {
                         placeholder="Password"
                       />
                     </div>
-                    <div className="input-group justify-content-center input-row">
+                    <div className="input-group justify-content-center input-row margin-bottom-1rem">
                       <div className="col-7">
                         <button className="greenBut">LOGIN</button>
                       </div>
                     </div>
                     <div className="row justify-content-center">
-                      <a className="orangeTxt-fp" href="">
+                      <a className="orangeTxt fp-link" href="">
                         Forgot Password?
                       </a>
                     </div>
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center signup-link-holder">
                       Don't have an accout?{" "}
-                      <a className="orangeTxt-fp" href="">
+                      <a className="orangeTxt signup-link" href="">
                         Sign up
                       </a>
                     </div>

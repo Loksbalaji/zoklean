@@ -1,14 +1,11 @@
-.login-form-wrapper h1 {
-  font-size: 1.8rem;
+.signup-form-wrapper h1 {
+  font-size: 1.7rem;
   color: #666;
   margin: 3rem 0px 2rem 0px;
 }
-.login-form-wrapper .loginForm-icon-holder,
-.login-form-wrapper p {
+.signup-form-wrapper .signupForm-icon-holder,
+.signup-form-wrapper p {
   text-align: center;
-}
-.loginForm-icon-holder img {
-  max-width: 60px;
 }
 
 .promo-section {
@@ -18,8 +15,14 @@
   background-size: cover;
 }
 
-.input-row {
-  margin: 2rem 0px;
+.signupForm-icon-holder img {
+  max-width: 60px;
+}
+.signup-form-wrapper .input-row {
+  margin: 1rem 0px;
+}
+.signup-inputs-form {
+  padding: 1rem 0;
 }
 .input-row input.form-control {
   padding-top: 0.8rem;
@@ -47,19 +50,19 @@
 .orangeTxt:hover {
   color: #fca900;
 }
-.login-form-wrapper .fp-link {
+.signup-form-wrapper .fp-link {
   font-size: 1rem;
   font-weight: bold;
 }
 .margin-bottom-1rem {
   margin-bottom: 1rem;
 }
-.login-form-wrapper .signup-link-holder {
+.signup-form-wrapper .signup-link-holder {
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
   margin: 1.8rem 0;
 }
-.login-form-wrapper .signup-link {
+.signup-form-wrapper .signup-link {
   padding-left: 0.5rem;
   font-weight: bold;
 }

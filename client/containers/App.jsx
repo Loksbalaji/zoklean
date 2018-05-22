@@ -8,6 +8,7 @@ import PropsRoute from "../components/PropsRoute";
 import * as actions from "../actions";
 
 import Login from "../components/Login";
+import Signup from "../components/Signup";
 
 class App extends React.Component {
   //eslint-disable-line
@@ -16,7 +17,8 @@ class App extends React.Component {
       <Router>
         <Switch>
           <PropsRoute exact path="/" component={Home} {...this.props} />
-          <PropsRoute path="/" component={Login} />
+          <PropsRoute path="/login" component={Login} />
+          <PropsRoute path="/signup" component={Signup} />
           <Route component={NotFound} />
         </Switch>
       </Router>
