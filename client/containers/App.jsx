@@ -9,6 +9,7 @@ import * as actions from "../actions";
 
 import Login from "../components/Login";
 import Signup from "../components/Signup";
+import ContractorSignup from "../components/contractorSignup";
 
 class App extends React.Component {
   //eslint-disable-line
@@ -19,6 +20,7 @@ class App extends React.Component {
           <PropsRoute exact path="/" component={Home} {...this.props} />
           <PropsRoute path="/login" component={Login} />
           <PropsRoute path="/signup" component={Signup} />
+          <PropsRoute path="/contractor-signup" component={ContractorSignup} />
           <Route component={NotFound} />
         </Switch>
       </Router>

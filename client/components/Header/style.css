@@ -22,3 +22,15 @@
 .header-nav-links-holder .greenBut:hover {
   text-decoration: none;
 }
+.zoklean-logo-holder {
+  display: inline-block;
+}
+.zoklean-logo-holder .hamburger-menu {
+  display: inline-block;
+  max-width: 60px;
+}
+.zoklean-logo-holder .logo-holder {
+  display: inline-block;
+  max-width: 185px;
+  margin-left: 1.5rem;
+}

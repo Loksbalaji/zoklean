@@ -6,6 +6,15 @@ import style from "./style.css";
 import Header from "../Header";
 import Footer from "../Footer";
 
+const _img_promo_img = require("../../images/Signup/signinPromoImg.png");
+const _img_customer_icon = require("../../images/Signup/specialist-user.png");
+const _img_employee_icon = require("../../images/Signup/employee.png");
+const _img_contractor_icon = require("../../images/Signup/vacuum.png");
+
+const _style_promoBannerBgImg = {
+  backgroundImage: "url(" + _img_promo_img + ")"
+};
+
 class Login extends React.Component {
   constructor() {
     super();
@@ -17,7 +26,10 @@ class Login extends React.Component {
         <Header />
         <div className="container">
           <div className="row">
-            <div className="col-sm-12 col-md-6 col-lg-6 row-eq-height nopadding promo-section" />
+            <div
+              className="col-sm-12 col-md-6 col-lg-6 row-eq-height nopadding promo-section"
+              style={_style_promoBannerBgImg}
+            />
             <div className="col-sm-12 col-md-6 col-lg-6">
               <div className="login-form-wrapper">
                 <div className="row justify-content-center">

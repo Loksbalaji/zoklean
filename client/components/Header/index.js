@@ -3,6 +3,9 @@ import classnames from "classnames";
 
 import style from "./style.css";
 
+const _img_hamburger = require("../../images/hamburgur.png");
+const _img_zoklean_logo = require("../../images/final-logo-copy.png");
+
 class Header extends React.Component {
   constructor() {
     super();
@@ -14,8 +17,15 @@ class Header extends React.Component {
         <div className="header-outer-wrapper violet-gradientbg-light">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 col-md-6 col-lg-7">
-                <div className="zoklean-logo-holder" />
+              <div className="col-sm-12 col-md-6 col-lg-7 disp-vertical-center">
+                <div className="zoklean-logo-holder">
+                  <div className="hamburger-menu">
+                    <img src={_img_hamburger} alt="" />
+                  </div>
+                  <div className="logo-holder">
+                    <img src={_img_zoklean_logo} alt="" />
+                  </div>
+                </div>
               </div>
               <div className="col-sm-12 col-md-6 col-lg-5">
                 <div className="header-nav-links-holder">
@@ -32,7 +42,7 @@ class Header extends React.Component {
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-7">
                       <span>
-                        <a className="greenBut" href="">
+                        <a className="greenBut" href="/contractor-signup">
                           Become a contractor
                         </a>
                       </span>
