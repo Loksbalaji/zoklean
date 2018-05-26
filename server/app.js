@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, "client", "../dist")))
 
 app.use("/api", api)
 app.use("*", (req, res, next) => { // eslint-disable-line
-    res.sendFile(path.join(__dirname, "client", "../dist", "index.html"))
+    res.sendFile(path.join(__dirname, "client/index.html", "../dist/index.html"))
 })
 
 app.use((err, req, res, next) => { // eslint-disable-line
