@@ -7,7 +7,7 @@ import HomePage from "../components/Home/index";
 
 const Home = ({ switchLanguage }) => (
   <div>
-    <HomePage />
+    Zoklean Home App
   </div>
 );
 
