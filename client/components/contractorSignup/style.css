@@ -1,0 +1,158 @@
+.signup-form-wrapper h1 {
+  font-size: 1.7rem;
+  color: #666;
+  margin: 3rem 0px 2rem 0px;
+}
+.signup-form-wrapper .input-row {
+  margin: 1rem 0px;
+}
+.signup-inputs-form {
+  padding: 1rem 0;
+}
+.input-row input.form-control {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.1rem;
+  border: 1px solid #666;
+}
+.input-row input::placeholder {
+  color: #ccc;
+}
+.input-row .greenBut {
+  background: #00d0aa;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.9rem 0;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.orangeTxt {
+  color: #fca900;
+}
+.orangeTxt:hover {
+  color: #fca900;
+}
+.signup-form-wrapper .fp-link {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.margin-bottom-1rem {
+  margin-bottom: 1rem;
+}
+.signup-form-wrapper .signup-link-holder {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  margin: 1.8rem 0;
+}
+.signup-form-wrapper .signup-link {
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+.signup-form-wrapper .tos-link {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #555;
+  letter-spacing: 0.03rem;
+  margin: 20px 0px 0px;
+}
+.signup-form-wrapper .signin-link {
+  margin-left: 0.4rem;
+}
+.contractor-signup-highlights-wrapper {
+  background: #efefef;
+  width: 100%;
+}
+.contractor-signup-highlights {
+  padding: 5rem 0px;
+}
+.contractor-signup-highlights h1 {
+  font-size: 28px;
+  color: #444;
+  padding-bottom: 1rem;
+}
+.contractor-signup-highlights .para {
+  font-size: 1.3rem;
+  color: #444;
+  text-align: center;
+  width: 100%;
+}
+.contractor-signup-highlights .contractor-signup-bullets {
+  padding: 2.5rem 0 2.5rem 0;
+  display: inline-block;
+}
+.contractor-signup-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contractor-signup-highlights ul li {
+  background: #fff;
+  box-shadow: 0px 0px 5px #ccc;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  padding: 1.3rem 1rem;
+  min-height: 85px;
+}
+.contractor-signup-highlights ul li i {
+  width: 2.5rem;
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+.contractor-signup-highlights span.txt {
+  display: inline-block;
+  font-size: 1.3rem;
+  width: 88%;
+  line-height: 1.5rem;
+  color: #898989;
+  vertical-align: middle;
+}
+.other-highlights-sec {
+  width: 100%;
+  padding-top: 2rem;
+}
+.other-highlights-box-wrapper {
+  margin: 2rem 10%;
+  display: inline-block;
+  width: 80%;
+}
+
+.other-highlights-box {
+  border-radius: 0.6rem;
+  padding: 5rem 0;
+  text-align: center;
+}
+.other-highlights-box .green-tit {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #00eec4;
+  font-weight: bold;
+}
+.other-highlights-box p {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0.9rem 0 0 0;
+  margin: 0;
+}
+.contractor-cta-holder {
+  width: 100%;
+  padding: 8rem 0 3rem 0;
+}
+.contractor-cta-holder .para {
+  padding-bottom: 0;
+  margin: 0;
+}
+.contractor-cta-holder .signup-cta {
+  background: #00d0aa;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem 2.3rem;
+  display: inline-block;
+  margin: 2rem 0 0 0;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.07rem;
+}

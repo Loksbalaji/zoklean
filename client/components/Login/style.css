@@ -1,0 +1,65 @@
+.login-form-wrapper h1 {
+  font-size: 1.8rem;
+  color: #666;
+  margin: 3rem 0px 2rem 0px;
+}
+.login-form-wrapper .loginForm-icon-holder,
+.login-form-wrapper p {
+  text-align: center;
+}
+.loginForm-icon-holder img {
+  max-width: 60px;
+}
+
+.promo-section {
+  background-image: url("https://ae01.alicdn.com/kf/HTB1AGZVLFXXXXc0XFXXq6xXFXXXz/New-Arrival-2016-Summer-Fashion-OL-Styles-Work-Suits-With-Jackets-And-Skirt-Professional-Formal-Ladies.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.input-row {
+  margin: 2rem 0px;
+}
+.input-row input.form-control {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.1rem;
+  border: 1px solid #666;
+}
+.input-row input::placeholder {
+  color: #ccc;
+}
+.input-row .greenBut {
+  background: #00d0aa;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.9rem 0;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.orangeTxt {
+  color: #fca900;
+}
+.orangeTxt:hover {
+  color: #fca900;
+}
+.login-form-wrapper .fp-link {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.margin-bottom-1rem {
+  margin-bottom: 1rem;
+}
+.login-form-wrapper .signup-link-holder {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  margin: 1.8rem 0;
+}
+.login-form-wrapper .signup-link {
+  padding-left: 0.5rem;
+  font-weight: bold;
+}

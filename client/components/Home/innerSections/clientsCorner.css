@@ -1,0 +1,9 @@
+.clients-corner-outer-wrapper {
+  background: #fff;
+  padding: 70px 0px 90px 0px;
+}
+.clients-corner-outer-wrapper .title-holder {
+  font-size: 1.9em;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
