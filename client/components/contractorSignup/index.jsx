@@ -6,6 +6,7 @@ import SignUpForm from "../Signup/signUpForm.jsx";
 
 import Header from "../Header";
 import Footer from "../Footer";
+import ContractorWhyZokleanSection from "./contractorWhyZoklean.jsx";
 
 const _img_promo_img = require("../../images/Signup/cleaningHighlights.jpg");
 
@@ -26,7 +27,7 @@ class ContractorSignup extends React.Component {
           <div className="row">
             <div
               className="col-sm-12 col-md-5 col-lg-5 row-eq-height nopadding promo-section"
-              style={_img_promo_img}
+              style={_style_promoBannerBgImg}
             />
             <div className="col-sm-12 col-md-7 col-lg-7 row-eq-height">
               <div className="signup-form-wrapper">
@@ -38,6 +39,7 @@ class ContractorSignup extends React.Component {
                 </div>
               </div>
             </div>
+            <ContractorWhyZokleanSection />
           </div>
         </div>
         <Footer />

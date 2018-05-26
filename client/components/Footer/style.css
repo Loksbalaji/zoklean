@@ -36,3 +36,13 @@
   text-align: right;
   padding: 20px 0px 0px 0px;
 }
+.waterOrgLogo {
+  max-width: 95px;
+  margin-right: 0.9rem;
+}
+
+.donateTxt {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+}

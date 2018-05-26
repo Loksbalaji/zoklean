@@ -3,6 +3,8 @@ import classnames from "classnames";
 
 import style from "./style.css";
 
+const _img_footer_infinity = require("../../images/waterorg.png");
+
 class Footer extends React.Component {
   constructor() {
     super();
@@ -120,7 +122,16 @@ class Footer extends React.Component {
 
               <div className="row">
                 <div className="col-12 donation-info justify-content-right">
-                  <p>$1 donated for each cleaning</p>
+                  <p>
+                    <img
+                      className="waterOrgLogo"
+                      src={_img_footer_infinity}
+                      alt=""
+                    />{" "}
+                    <span className="donateTxt">
+                      $1 donated for each cleaning
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>

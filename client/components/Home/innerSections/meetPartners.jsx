@@ -3,6 +3,10 @@ import classnames from "classnames";
 
 import meetPartners from "./meetPartners.css";
 
+const _img_partner1 = require("../../../images/Home/bitmap_2.png");
+const _img_partner2 = require("../../../images/Home/bitmap_3.png");
+const _img_partner3 = require("../../../images/Home/bitmap_4.png");
+
 class MeetOurPartners extends Component {
   constructor() {
     super();
@@ -22,11 +26,7 @@ class MeetOurPartners extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="container partnerDetailsBox">
                   <div className="parnerImgHolder">
-                    <img
-                      className="img-fluid"
-                      src="https://secure.gravatar.com/avatar/9dccc00c2ba4c7c6f8b3ea5dde3f68a9?s=400&d=mm&r=g"
-                      alt=""
-                    />
+                    <img className="img-fluid" src={_img_partner1} alt="" />
                   </div>
                   <h4>Seth Wolfe</h4>
                   <p>
@@ -40,11 +40,7 @@ class MeetOurPartners extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="container partnerDetailsBox">
                   <div className="parnerImgHolder">
-                    <img
-                      className="img-fluid"
-                      src="https://secure.gravatar.com/avatar/9dccc00c2ba4c7c6f8b3ea5dde3f68a9?s=400&d=mm&r=g"
-                      alt=""
-                    />
+                    <img className="img-fluid" src={_img_partner2} alt="" />
                   </div>
                   <h4>Eliza Lee</h4>
                   <p>
@@ -58,11 +54,7 @@ class MeetOurPartners extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="container partnerDetailsBox">
                   <div className="parnerImgHolder">
-                    <img
-                      className="img-fluid"
-                      src="https://secure.gravatar.com/avatar/4e5a2d787343e3a1ccf075c7c115f7c7?s=400&d=mm&r=g"
-                      alt=""
-                    />
+                    <img className="img-fluid" src={_img_partner3} alt="" />
                   </div>
                   <h4>Tillie Wolfe</h4>
                   <p>

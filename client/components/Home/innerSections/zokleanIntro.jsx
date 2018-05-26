@@ -3,6 +3,10 @@ import classnames from "classnames";
 
 import zokleanIntroCss from "./zokleanIntro.css";
 
+const _img_pricing = require("../../../images/pricing.png");
+const _img_professional = require("../../../images/professionals.png");
+const _img_service = require("../../../images/service.png");
+
 class ZokleanIntro extends Component {
   constructor() {
     super();
@@ -30,7 +34,7 @@ class ZokleanIntro extends Component {
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter">
                     <img
-                      src="https://www.w3schools.com/bootstrap/newyork.jpg"
+                      src={_img_pricing}
                       className="rounded-circle banner2-circle-img"
                       alt="Cinque Terre"
                     />
@@ -45,7 +49,7 @@ class ZokleanIntro extends Component {
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter">
                     <img
-                      src="https://www.w3schools.com/bootstrap/newyork.jpg"
+                      src={_img_professional}
                       className="rounded-circle banner2-circle-img"
                       alt="Cinque Terre"
                     />
@@ -63,7 +67,7 @@ class ZokleanIntro extends Component {
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter">
                     <img
-                      src="https://www.w3schools.com/bootstrap/newyork.jpg"
+                      src={_img_service}
                       className="rounded-circle banner2-circle-img"
                       alt="Cinque Terre"
                     />

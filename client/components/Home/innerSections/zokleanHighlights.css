@@ -28,22 +28,28 @@
 }
 .zkHighlightSectionOuterWrapper .bullet-points ul li {
   background: #fff;
-  padding: 10px 4%;
+  padding: 18px 5%;
   width: 100%;
-  border-radius: 5px;
-  color: #555;
-  margin: 20px 0px;
-  font-size: 1.5em;
+  border-radius: 0.7rem;
+  color: #787878;
+  margin: 23px 0px;
+  font-size: 1.6em;
 }
 .zkHighlightSectionOuterWrapper .zkgreen-cta-butt {
   background: #00eec4;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 0.8rem;
   margin: 10px 5% 30px 5%;
-  padding: 15px 4%;
+  padding: 25px 4%;
   width: 90%;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: bold;
   border: none;
+  cursor: pointer;
+}
+.hl-buttet-icon {
+  max-width: 50px;
+  display: inline-block;
+  padding-right: 1rem;
 }

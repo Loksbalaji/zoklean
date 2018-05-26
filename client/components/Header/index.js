@@ -23,7 +23,9 @@ class Header extends React.Component {
                     <img src={_img_hamburger} alt="" />
                   </div>
                   <div className="logo-holder">
-                    <img src={_img_zoklean_logo} alt="" />
+                    <a href="/">
+                      <img src={_img_zoklean_logo} alt="" />
+                    </a>
                   </div>
                 </div>
               </div>
