@@ -101,5 +101,6 @@
     "style-loader": "^0.21.0",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.7.1"
-  }
+  },
+  "proxy": "http://localhost:8000"
 }
