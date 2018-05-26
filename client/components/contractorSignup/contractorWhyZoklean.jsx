@@ -12,53 +12,74 @@ class ContractorWhyZokleanSection extends React.Component {
 
   render() {
     return (
-      <div className="contractor-signup-hightlights-wrapper">
+      <div className="contractor-signup-highlights-wrapper">
         <div className="container">
-          <div className="row contractor-signup-hightlights">
+          <div className="row contractor-signup-highlights">
             <div className="col-12">
-              <h1>Why Zoklean?</h1>
-              <p className="para">
-                Zoklean is th premiere app for cleaning professionals to market,
-                manage and expand their business. It's our job to make your
-                cleaning business thrive. With Zoklean's extensive cleaning
-                process, you will be joining an exclusive network comprised of
-                cleaners who:{" "}
-              </p>
+              <div className="row justify-content-center">
+                <h1>Why Zoklean?</h1>
+                <p className="para">
+                  Zoklean is th premiere app for cleaning professionals to
+                  market, manage and expand their business. It's our job to make
+                  your cleaning business thrive. With Zoklean's extensive
+                  cleaning process, you will be joining an exclusive network
+                  comprised of cleaners who:{" "}
+                </p>
+              </div>
             </div>
-            <div className="col-sm-12 col-md-6 col-lg-6">
-              <div className="contractor-signup-highlights">
-                <ul>
-                  <li>
-                    <i>
-                      <img src={_img_violerBullet} alt="" />
-                      Established in the cleaning business for 3+ years
-                    </i>
-                  </li>
-                  <li>
-                    <i>
-                      <img src={_img_violerBullet} alt="" />
-                      Average 4.75 out of 5 star customer rating
-                    </i>
-                  </li>
-                  <li>
-                    <i>
-                      <img src={_img_violerBullet} alt="" />
-                      Pass a background check
-                    </i>
-                  </li>
-                  <li>
-                    <i>
-                      <img src={_img_violerBullet} alt="" />
-                      Have a history of providing high quality service
-                    </i>
-                  </li>
-                  <li>
-                    <i>
-                      <img src={_img_violerBullet} alt="" />
-                      Insured and bonded
-                    </i>
-                  </li>
-                </ul>
+            <div className="col-12 contractor-signup-bullets">
+              <div className="row">
+                <div className="col-sm-12 col-md-6 col-lg-6">
+                  <ul>
+                    <li>
+                      <i>
+                        <img src={_img_violerBullet} alt="" />
+                      </i>
+                      <span className="txt">Are licensed</span>
+                    </li>
+                    <li>
+                      <i>
+                        <img src={_img_violerBullet} alt="" />
+                      </i>
+                      <span className="txt">
+                        Average 4.75 out of 5 star customer rating
+                      </span>
+                    </li>
+                    <li>
+                      <i>
+                        <img src={_img_violerBullet} alt="" />
+                      </i>
+                      <span className="txt">
+                        Have a history of providing high quality service
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-6">
+                  <ul>
+                    <li>
+                      <i>
+                        <img src={_img_violerBullet} alt="" />
+                      </i>
+                      <span className="txt">
+                        Established in the cleaning business for 3+ years
+                      </span>
+                    </li>
+                    <li>
+                      <i>
+                        <img src={_img_violerBullet} alt="" />
+                      </i>
+                      <span className="txt">Pass a background check</span>
+                    </li>
+
+                    <li>
+                      <i>
+                        <img src={_img_violerBullet} alt="" />
+                      </i>
+                      <span className="txt">Insured and bonded</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-12">
@@ -83,6 +104,65 @@ class ContractorWhyZokleanSection extends React.Component {
                   software, exclusively available to cleaners in the zoklean
                   network, takes care of things like:{" "}
                 </p>
+              </div>
+            </div>
+            <div className="col-12">
+              <div className="row justify-content-center other-highlights-sec">
+                <div className="col-sm-12 col-md-12 col-lg-6">
+                  <div className="other-highlights-box-wrapper">
+                    <div className="other-highlights-box violet-gradientbg-light">
+                      <h3 className="green-tit">Scheduling</h3>
+                      <p>Route optimization</p>
+                      <p>Booking info</p>
+                      <p>Job status</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-12 col-md-12 col-lg-6">
+                  <div className="other-highlights-box-wrapper">
+                    <div className="other-highlights-box violet-gradientbg-light">
+                      <h3 className="green-tit">Team Coordination</h3>
+                      <p>Contact information</p>
+                      <p>Schedules</p>
+                      <p>Job assignments</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-12 col-md-12 col-lg-6">
+                  <div className="other-highlights-box-wrapper">
+                    <div className="other-highlights-box violet-gradientbg-light">
+                      <h3 className="green-tit">Customer Management</h3>
+                      <p>Contact information</p>
+                      <p>Bookings</p>
+                      <p>Customer service</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-12 col-md-12 col-lg-6">
+                  <div className="other-highlights-box-wrapper">
+                    <div className="other-highlights-box violet-gradientbg-light">
+                      <h3 className="green-tit">Business Reporting</h3>
+                      <p>Route optimization</p>
+                      <p>Booking</p>
+                      <p>Job info status</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-12">
+              <div className="container">
+                <div className="row justify-content-center contractor-cta-holder">
+                  <p className="para">Are you ready to clean with Zoklean?</p>
+                  <p className="para">
+                    Apply to be a part of the Zoklean network today!
+                  </p>
+                  <div className="row-signup-cta">
+                    <a href="javascript:" className="signup-cta" title="">
+                      Become a contractor
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

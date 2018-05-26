@@ -62,7 +62,7 @@ class Footer extends React.Component {
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:" title="">
+                      <a href="/contact" title="">
                         Contact Us
                       </a>
                     </li>

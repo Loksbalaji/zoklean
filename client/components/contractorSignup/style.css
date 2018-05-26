@@ -61,15 +61,98 @@
 .signup-form-wrapper .signin-link {
   margin-left: 0.4rem;
 }
-.contractor-signup-hightlights .para {
-  font-size: 1.3rem;
-  color: #666;
-}
-
-.contractor-signup-hightlights-wrapper {
+.contractor-signup-highlights-wrapper {
   background: #efefef;
   width: 100%;
 }
-.contractor-signup-hightlights {
+.contractor-signup-highlights {
   padding: 5rem 0px;
+}
+.contractor-signup-highlights h1 {
+  font-size: 28px;
+  color: #444;
+  padding-bottom: 1rem;
+}
+.contractor-signup-highlights .para {
+  font-size: 1.3rem;
+  color: #444;
+  text-align: center;
+  width: 100%;
+}
+.contractor-signup-highlights .contractor-signup-bullets {
+  padding: 2.5rem 0 2.5rem 0;
+  display: inline-block;
+}
+.contractor-signup-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contractor-signup-highlights ul li {
+  background: #fff;
+  box-shadow: 0px 0px 5px #ccc;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  padding: 1.3rem 1rem;
+  min-height: 85px;
+}
+.contractor-signup-highlights ul li i {
+  width: 2.5rem;
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+.contractor-signup-highlights span.txt {
+  display: inline-block;
+  font-size: 1.3rem;
+  width: 88%;
+  line-height: 1.5rem;
+  color: #898989;
+  vertical-align: middle;
+}
+.other-highlights-sec {
+  width: 100%;
+  padding-top: 2rem;
+}
+.other-highlights-box-wrapper {
+  margin: 2rem 10%;
+  display: inline-block;
+  width: 80%;
+}
+
+.other-highlights-box {
+  border-radius: 0.6rem;
+  padding: 5rem 0;
+  text-align: center;
+}
+.other-highlights-box .green-tit {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #00eec4;
+  font-weight: bold;
+}
+.other-highlights-box p {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0.9rem 0 0 0;
+  margin: 0;
+}
+.contractor-cta-holder {
+  width: 100%;
+  padding: 8rem 0 3rem 0;
+}
+.contractor-cta-holder .para {
+  padding-bottom: 0;
+  margin: 0;
+}
+.contractor-cta-holder .signup-cta {
+  background: #00d0aa;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem 2.3rem;
+  display: inline-block;
+  margin: 2rem 0 0 0;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.07rem;
 }

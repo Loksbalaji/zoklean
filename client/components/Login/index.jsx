@@ -38,29 +38,19 @@ class Login extends React.Component {
                 <div className="row">
                   <div className="col-sm-4 col-md-4 col-lg-4">
                     <div className="loginForm-icon-holder">
-                      <img
-                        src="https://www.icon2s.com/img256/256x256-brown-woman-people-icon.png
-                        "
-                        alt=""
-                      />
+                      <img src={_img_customer_icon} alt="" />
                     </div>
                     <p>Customer</p>
                   </div>
                   <div className="col-sm-4 col-md-4 col-lg-4">
                     <div className="loginForm-icon-holder">
-                      <img
-                        src="https://marketplace.canva.com/MAB60QJGqGg/1/thumbnail_large/canva-man-male-avatar-person-people-icon.-vector-graphic-MAB60QJGqGg.png"
-                        alt=""
-                      />
+                      <img src={_img_employee_icon} alt="" />
                     </div>
                     <p>Employee</p>
                   </div>
                   <div className="col-sm-4 col-md-4 col-lg-4">
                     <div className="loginForm-icon-holder">
-                      <img
-                        src="http://www.myiconfinder.com/uploads/iconsets/256-256-c606900441e4739c7105f6df0ec0d147-engineer.png"
-                        alt=""
-                      />
+                      <img src={_img_contractor_icon} alt="" />
                     </div>
                     <p>Contractor</p>
                   </div>
