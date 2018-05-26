@@ -1,0 +1,21 @@
+.homebanner-wrapper {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-booking-holder {
+  background: #fff;
+  border-radius: 1rem 0px 0px 1rem;
+  margin: 3rem 0;
+  padding: 2rem 1rem;
+}
+.booking-submit-butt {
+  background: #00d0aa;
+  color: #fff;
+  border-radius: 0.8rem;
+  padding: 15px 6rem;
+  cursor: pointer;
+  border: 1px solid #00d0aa;
+  font-weight: bold;
+  font-size: 1.4rem;
+}

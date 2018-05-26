@@ -1,0 +1,75 @@
+.signup-form-wrapper h1 {
+  font-size: 1.7rem;
+  color: #666;
+  margin: 3rem 0px 2rem 0px;
+}
+.signup-form-wrapper .input-row {
+  margin: 1rem 0px;
+}
+.signup-inputs-form {
+  padding: 1rem 0;
+}
+.input-row input.form-control {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.1rem;
+  border: 1px solid #666;
+}
+.input-row input::placeholder {
+  color: #ccc;
+}
+.input-row .greenBut {
+  background: #00d0aa;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.9rem 0;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.orangeTxt {
+  color: #fca900;
+}
+.orangeTxt:hover {
+  color: #fca900;
+}
+.signup-form-wrapper .fp-link {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.margin-bottom-1rem {
+  margin-bottom: 1rem;
+}
+.signup-form-wrapper .signup-link-holder {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  margin: 1.8rem 0;
+}
+.signup-form-wrapper .signup-link {
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+.signup-form-wrapper .tos-link {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #555;
+  letter-spacing: 0.03rem;
+  margin: 20px 0px 0px;
+}
+.signup-form-wrapper .signin-link {
+  margin-left: 0.4rem;
+}
+.contractor-signup-hightlights .para {
+  font-size: 1.3rem;
+  color: #666;
+}
+
+.contractor-signup-hightlights-wrapper {
+  background: #efefef;
+  width: 100%;
+}
+.contractor-signup-hightlights {
+  padding: 5rem 0px;
+}

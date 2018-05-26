@@ -1,12 +1,12 @@
 .meetPartners-outer-wrapper {
   background: #efefef;
-  padding: 20px 0px;
+  padding: 20px 0px 50px 0px;
 }
 .nearyou-heading-holder {
   padding: 20px 0px 20px 0px;
 }
 .nearyou-heading-holder h3 {
-  font-size: 30px;
+  font-size: 1.9rem;
   font-weight: bold;
   padding-bottom: 0px;
 }
@@ -19,7 +19,7 @@
 }
 .pinCodeBox {
   padding: 12px 2% 12px 12%;
-  font-size: 20px;
+  font-size: 1.2rem;
   border-radius: 5px;
   border: 1px solid #888;
   width: 100%;
@@ -35,7 +35,7 @@ input.pinCodeBox::placeholder {
 }
 .fus-content-wrapper h4 {
   color: #fff;
-  font-size: 36px;
+  font-size: 2rem;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 0;

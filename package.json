@@ -9,8 +9,7 @@
     "start:client": "webpack-dev-server --config config/webpack.config.dev.js",
     "start:server": "nodemon server/bin/cluster --watch server",
     "start:server:prod": "cross-env NODE_ENV=production npm run start:server",
-    "start:tunnel":
-      "npm run build && cross-env NODE_ENV=production npm-run-all -p start:server tunnel",
+    "start:tunnel": "npm run build && cross-env NODE_ENV=production npm-run-all -p start:server tunnel",
     "tunnel": "lt --port 8000",
     "prebuild": "npm run build:clean",
     "build": "webpack --progress --config config/webpack.config.prod.js -p",
@@ -33,11 +32,16 @@
   "eslintConfig": {
     "extends": "./config/.eslintrc"
   },
-  "eslintIgnore": ["coverage", "dist"],
+  "eslintIgnore": [
+    "coverage",
+    "dist"
+  ],
   "jest": {
     "collectCoverage": true,
     "testRegex": "\\.spec\\.js$",
-    "coveragePathIgnorePatterns": ["/client/translations/"]
+    "coveragePathIgnorePatterns": [
+      "/client/translations/"
+    ]
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -46,6 +50,7 @@
     "classnames": "^2.2.5",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.4",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^2.30.1",
     "intl": "^1.2.5",
     "morgan": "^1.8.2",
@@ -63,7 +68,8 @@
     "redux-thunk": "^2.2.0",
     "sequelize": "^4.8.0",
     "serve-favicon": "^2.4.3",
-    "styled-components": "^2.1.2"
+    "styled-components": "^2.1.2",
+    "url-loader": "^1.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

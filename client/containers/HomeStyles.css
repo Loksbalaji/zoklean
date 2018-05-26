@@ -8,12 +8,69 @@ img {
   max-width: 100%;
 }
 .zoklean-violet-gradientbg {
-  background-image: linear-gradient(
-    to right bottom,
-    #8000bf,
-    #960bc4,
-    #ab17ca,
-    #bf23cf,
-    #d22ed4
-  );
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d00b4+0,5d00b4+52,5d00b4+52,e570e7+100 */
+  background: #5d00b4; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #5d00b4 0%,
+    #5d00b4 52%,
+    #5d00b4 52%,
+    #e570e7 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #5d00b4 0%,
+    #5d00b4 52%,
+    #5d00b4 52%,
+    #e570e7 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #5d00b4 0%,
+    #5d00b4 52%,
+    #5d00b4 52%,
+    #e570e7 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d00b4', endColorstr='#e570e7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.violet-gradientbg-light {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d00b4+0,5d00b4+11,5d00b4+11,5d00b4+30,e570e7+100 */
+  background: #5d00b4; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #5d00b4 0%,
+    #5d00b4 11%,
+    #5d00b4 11%,
+    #5d00b4 30%,
+    #e570e7 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #5d00b4 0%,
+    #5d00b4 11%,
+    #5d00b4 11%,
+    #5d00b4 30%,
+    #e570e7 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #5d00b4 0%,
+    #5d00b4 11%,
+    #5d00b4 11%,
+    #5d00b4 30%,
+    #e570e7 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d00b4', endColorstr='#e570e7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.disp-vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.disp-vertical-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

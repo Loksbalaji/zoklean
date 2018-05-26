@@ -1,0 +1,48 @@
+.sub-footer-links {
+  padding: 70px 0px 20px 0px;
+}
+.sub-footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sub-footer-links ul li {
+  margin: 15px 0px;
+}
+.sub-footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.blackbg-footer {
+  background: #000;
+  color: #fff;
+  padding: 13px 0px;
+  font-size: 1.1rem;
+  letter-spacing: 0.8px;
+}
+.social-links-holder {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.donation-info {
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+.donation-info p {
+  width: 100%;
+  text-align: right;
+  padding: 20px 0px 0px 0px;
+}
+.waterOrgLogo {
+  max-width: 95px;
+  margin-right: 0.9rem;
+}
+
+.donateTxt {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+}
