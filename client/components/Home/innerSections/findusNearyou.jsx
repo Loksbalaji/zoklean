@@ -3,6 +3,10 @@ import classnames from "classnames";
 
 import findusNearyou from "./findusNearyou.css";
 
+const _img_location1 = require("../../../images/Home/bitmap_8.png");
+const _img_location2 = require("../../../images/Home/bitmap_9.png");
+const _img_location3 = require("../../../images/Home/bitmap_10.png");
+
 class FindusNearyou extends Component {
   constructor() {
     super();
@@ -31,11 +35,7 @@ class FindusNearyou extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="container">
                   <div className="locationImageHolder">
-                    <img
-                      className="img-fluid"
-                      src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&h=350"
-                      alt=""
-                    />
+                    <img className="img-fluid" src={_img_location1} alt="" />
                   </div>
                   <h4>La Jolla</h4>
                 </div>
@@ -43,11 +43,7 @@ class FindusNearyou extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="container">
                   <div className="locationImageHolder">
-                    <img
-                      className="img-fluid"
-                      src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&h=350"
-                      alt=""
-                    />
+                    <img className="img-fluid" src={_img_location2} alt="" />
                   </div>
                   <h4>Del Mar</h4>
                 </div>
@@ -55,11 +51,7 @@ class FindusNearyou extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="container">
                   <div className="locationImageHolder">
-                    <img
-                      className="img-fluid"
-                      src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&h=350"
-                      alt=""
-                    />
+                    <img className="img-fluid" src={_img_location3} alt="" />
                   </div>
                   <h4>Downtown</h4>
                 </div>

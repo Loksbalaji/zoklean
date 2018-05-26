@@ -65,3 +65,11 @@
   font-size: 1.3rem;
   color: #666;
 }
+
+.contractor-signup-hightlights-wrapper {
+  background: #efefef;
+  width: 100%;
+}
+.contractor-signup-hightlights {
+  padding: 5rem 0px;
+}

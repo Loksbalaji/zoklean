@@ -12,7 +12,7 @@ class ContractorWhyZokleanSection extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="contractor-signup-hightlights-wrapper">
         <div className="container">
           <div className="row contractor-signup-hightlights">
             <div className="col-12">

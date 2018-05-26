@@ -39,9 +39,10 @@ class ContractorSignup extends React.Component {
                 </div>
               </div>
             </div>
-            <ContractorWhyZokleanSection />
           </div>
         </div>
+        <ContractorWhyZokleanSection />
+
         <Footer />
       </div>
     );
