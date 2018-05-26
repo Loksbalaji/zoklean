@@ -21,7 +21,8 @@
     "test:clean": "rimraf coverage",
     "presetup": "npm install",
     "setup": "node setup",
-    "deploy": ""
+    "deploy": "",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "lint-staged": {
     "*.{js,jsx}": "lint:eslint"
