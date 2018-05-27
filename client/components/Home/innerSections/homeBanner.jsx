@@ -40,10 +40,10 @@ class HomeBanner extends React.Component {
                         className=""
                       />
                       <div className="booking-hl-txt">
-                        <span>
+                        <span className="icon">
                           <img src={_img_greenTick} alt="" />
                         </span>
-                        <span>
+                        <span className="txt">
                           Service is available in your area. Do you want to book
                           a Cleaning Service.
                         </span>

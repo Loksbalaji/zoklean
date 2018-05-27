@@ -63,9 +63,27 @@ class ContactPage extends React.Component {
                       <textarea />
                     </div>
                   </div>
-                  <div className="row">
-                    <button>Submit</button>
+                  <div className="row-submit-cta row justify-content-center">
+                    <a href="javascript:" className="submit-cta" title="">
+                      Send
+                    </a>
                   </div>
+                </div>
+              </div>
+
+              <div className="row c24x7-wrapper violet-gradientbg-light">
+                <div className="col-sm-12 col-md-6 col-lg-7">
+                  <div className="row justify-content-center">
+                    <p className="c24x7-txt">24x7 Customer Support</p>
+                    <p className="para">
+                      A Zoklean representative is available to chat!
+                    </p>
+                  </div>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-5">
+                  <a className="tel-no" href="javascript:">
+                    (800) 331-7527
+                  </a>
                 </div>
               </div>
             </div>
