@@ -3,24 +3,43 @@ import classnames from "classnames";
 
 import style from "./style.css";
 
+import Menu from "./menu.jsx";
+
 const _img_hamburger = require("../../images/hamburgur.png");
 const _img_zoklean_logo = require("../../images/final-logo-copy.png");
+
+let _style_menu_showhide = {
+  display: "none"
+};
 
 class Header extends React.Component {
   constructor() {
     super();
   }
+  Menu;
+
+  openMenu() {
+    _style_menu_showhide = {
+      display: "inline-block"
+    };
+  }
 
   render() {
     return (
-      <div>
+      <div className="pos-relative">
         <div className="header-outer-wrapper violet-gradientbg-light">
           <div className="container">
             <div className="row">
               <div className="col-sm-12 col-md-12 col-lg-7 disp-vertical-center">
                 <div className="zoklean-logo-holder">
                   <div className="hamburger-menu">
-                    <img src={_img_hamburger} alt="" />
+                    <a
+                      href="javascript:"
+                      onClick={this.openMenu()}
+                      className="menu-icon"
+                    >
+                      <img src={_img_hamburger} alt="" />
+                    </a>
                   </div>
                   <div className="logo-holder">
                     <a href="/">
@@ -56,6 +75,7 @@ class Header extends React.Component {
             </div>
           </div>
         </div>
+        <Menu dispProp={_style_menu_showhide} />
       </div>
     );
   }

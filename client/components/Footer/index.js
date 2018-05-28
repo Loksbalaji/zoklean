@@ -29,7 +29,7 @@ class Footer extends React.Component {
                       </a>
                     </li>
                     <li>
-                      <a href="javascript:" title="">
+                      <a href="/team" title="">
                         About us
                       </a>
                     </li>
