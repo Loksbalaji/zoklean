@@ -20,7 +20,7 @@ class HomeBanner extends React.Component {
     return (
       <div>
         <div>
-          <div className="container">
+          <div className="container md-sm-full-width">
             <div
               className="row homebanner-wrapper"
               style={_style_promoBannerBgImg}

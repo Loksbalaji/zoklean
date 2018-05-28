@@ -13,6 +13,9 @@ textarea:focus,
 button:focus {
   outline: none;
 }
+.container {
+  max-width: 1200px;
+}
 
 .zoklean-violet-gradientbg {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d00b4+0,5d00b4+52,5d00b4+52,e570e7+100 */
@@ -80,4 +83,12 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.txtCenter {
+  text-align: center;
+}
+.width-80 {
+  width: 80%;
+  margin: 0 10%;
 }

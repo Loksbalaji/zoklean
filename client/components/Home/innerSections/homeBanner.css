@@ -70,11 +70,27 @@
 }
 .booking-hl-txt span.txt {
   display: inline-block;
-  width: 89%;
+  width: 88%;
   line-height: 1.5rem;
   color: #111;
   padding-left: 0.8rem;
   letter-spacing: 0.05rem;
   font-size: 1.1rem;
   vertical-align: middle;
+}
+@media only screen and (max-width: 992px) {
+  .md-sm-full-width {
+    padding: 0;
+  }
+  .banner-booking-holder {
+    margin-left: 1.5rem !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .booking-hl-txt span.txt {
+    width: 81%;
+  }
+  .banner-booking-holder {
+    margin-left: 1rem;
+  }
 }

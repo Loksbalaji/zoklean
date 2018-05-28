@@ -4,8 +4,8 @@
 .header-nav-links-holder .loginLink,
 .header-nav-links-holder .signupLink {
   color: #fff;
-  font-size: 1.1em;
-  margin: 25px 0px 25px 0px;
+  font-size: 1.1rem;
+  margin: 1.7rem 0px 1.7rem 0px;
   text-decoration: none;
   display: inline-block;
 }
@@ -13,7 +13,7 @@
   background: #00d0aa;
   color: #fff;
   padding: 20px 0.6rem;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 0.5rem 0.5rem;
   display: inline-block;
   font-size: 1.1em;
   font-weight: bold;
@@ -33,4 +33,17 @@
   display: inline-block;
   max-width: 185px;
   margin-left: 1.5rem;
+}
+@media only screen and (max-width: 992px) {
+  .header-nav-links-holder .greenBut {
+    border-radius: 0.5rem;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 1rem 0 1rem 0;
+  }
+  .header-nav-links-holder .loginLink,
+  .header-nav-links-holder .signupLink {
+    margin: 1rem 0 0.5rem 0;
+  }
 }
