@@ -19,9 +19,12 @@ class HomeBanner extends React.Component {
   render() {
     return (
       <div>
-        <div className="homebanner-wrapper">
+        <div>
           <div className="container">
-            <div className="row" style={_style_promoBannerBgImg}>
+            <div
+              className="row homebanner-wrapper"
+              style={_style_promoBannerBgImg}
+            >
               <div className="col-sm-12 col-md-12 col-lg-7 nopadding">
                 &nbsp;
               </div>

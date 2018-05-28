@@ -7,6 +7,13 @@ body {
 img {
   max-width: 100%;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 .zoklean-violet-gradientbg {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d00b4+0,5d00b4+52,5d00b4+52,e570e7+100 */
   background: #5d00b4; /* Old browsers */

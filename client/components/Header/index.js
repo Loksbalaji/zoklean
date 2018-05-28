@@ -32,6 +32,7 @@ class Header extends React.Component {
               <div className="col-sm-12 col-md-6 col-lg-5">
                 <div className="header-nav-links-holder">
                   <div className="row">
+                    <div className="col-sm-0 col-md-6 col-lg-1" />
                     <div className="col-sm-6 col-md-6 col-lg-2">
                       <a className="loginLink" href="/login">
                         Login
@@ -42,7 +43,7 @@ class Header extends React.Component {
                         Sign Up
                       </a>
                     </div>
-                    <div className="col-sm-12 col-md-12 col-lg-7">
+                    <div className="col-sm-12 col-md-12 col-lg-6">
                       <span>
                         <a className="greenBut" href="/contractor-signup">
                           Become a contractor

@@ -4,6 +4,9 @@ import classnames from "classnames";
 import style from "./style.css";
 
 const _img_footer_infinity = require("../../images/waterorg.png");
+const _img_footer_fb = require("../../images/facebook-logo-button.png");
+const _img_footer_twitter = require("../../images/twitter-logo-button.png");
+const _img_footer_insta = require("../../images/instagram-logo.png");
 
 class Footer extends React.Component {
   constructor() {
@@ -96,24 +99,26 @@ class Footer extends React.Component {
                 </div>
 
                 {/* Footer column 4 */}
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                  <div className="social-links-holder">
-                    <span className="col-sm-12 col-md-12 col-lg-4">
+                <div className="col-sm-12 col-md-6 col-lg-4 disp-vertical-center">
+                  <div className="row social-links-holder">
+                    <span className="col-sm-12 col-md-12 col-lg-5 disp-vertical-center nopadding">
                       Follow Us
                     </span>
-                    <div className="col-4">
+                    <div className="col-sm-12 col-md-12 col-lg-7 social-links nopadding">
                       <a target="_blank" href="javascript:">
-                        <i className="" />
+                        <i className="">
+                          <img src={_img_footer_fb} alt="" />
+                        </i>
                       </a>
-                    </div>
-                    <div className="col-4">
                       <a target="_blank" href="javascript:">
-                        <i className="" />
+                        <i className="">
+                          <img src={_img_footer_twitter} alt="" />
+                        </i>
                       </a>
-                    </div>
-                    <div className="col-4">
                       <a target="_blank" href="javascript:">
-                        <i className="" />
+                        <i className="">
+                          <img src={_img_footer_insta} alt="" />
+                        </i>
                       </a>
                     </div>
                   </div>
