@@ -1,3 +1,7 @@
+.container-1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .homebanner-wrapper {
   background-position: center top;
   background-repeat: no-repeat;
@@ -5,9 +9,9 @@
 }
 .banner-booking-holder {
   background: #fff;
-  border-radius: 1rem 0px 0px 1rem;
-  margin: 3rem 0;
-  padding: 2rem 1rem;
+  border-radius: 2rem 0px 0px 2rem;
+  margin: 5rem 0 4rem 0;
+  padding: 2rem 1rem 2rem 2rem;
 }
 .booking-submit-butt {
   background: #00d0aa;
@@ -18,4 +22,75 @@
   border: 1px solid #00d0aa;
   font-weight: bold;
   font-size: 1.4rem;
+}
+.booking-title p {
+  font-size: 1.4rem;
+  letter-spacing: 0.12rem;
+}
+.booking-title p img {
+  padding: 0 0.12rem;
+}
+.booking-input-area input[type="text"] {
+  border: 0;
+  border-bottom: 2px solid #666;
+  width: 100%;
+  padding: 0 0 0.3rem 0;
+  margin: 1rem 0 1rem 0;
+  font-size: 1.1rem;
+}
+.booking-input-area input[type="text"]::placeholder {
+  color: #bbb;
+}
+
+.booking-input-area .button-holder,
+.booking-input-area .button-holder span {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.booking-input-area .button-holder span {
+  font-size: 0.7rem;
+  color: #222;
+  font-weight: bold;
+  letter-spacing: 0.02rem;
+  padding-top: 6px;
+}
+.booking-input-area .button-holder span.orange-txt {
+  width: auto;
+  color: #fca900;
+}
+.booking-hl-txt {
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+.booking-hl-txt span.icon {
+  width: 2.3rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.booking-hl-txt span.txt {
+  display: inline-block;
+  width: 88%;
+  line-height: 1.5rem;
+  color: #111;
+  padding-left: 0.8rem;
+  letter-spacing: 0.05rem;
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 992px) {
+  .md-sm-full-width {
+    padding: 0;
+  }
+  .banner-booking-holder {
+    margin-left: 1.5rem !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .booking-hl-txt span.txt {
+    width: 81%;
+  }
+  .banner-booking-holder {
+    margin-left: 1rem;
+  }
 }

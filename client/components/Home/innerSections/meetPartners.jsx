@@ -24,45 +24,51 @@ class MeetOurPartners extends Component {
             </div>
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-4">
-                <div className="container partnerDetailsBox">
+                <div className="partnerDetailsBox">
                   <div className="parnerImgHolder">
                     <img className="img-fluid" src={_img_partner1} alt="" />
                   </div>
-                  <h4>Seth Wolfe</h4>
-                  <p>
-                    Business often become known today through effective
-                    marketing. The marketing may be in the form of a regular
-                    item or half coulmn society news in the Sunday newspaper.
-                    The marketing may be in form...
-                  </p>
+                  <div className="container">
+                    <h4>Seth Wolfe</h4>
+                    <p>
+                      Business often become known today through effective
+                      marketing. The marketing may be in the form of a regular
+                      item or half coulmn society news in the Sunday newspaper.
+                      The marketing may be in form...
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="col-sm-12 col-md-6 col-lg-4">
-                <div className="container partnerDetailsBox">
+                <div className="partnerDetailsBox">
                   <div className="parnerImgHolder">
                     <img className="img-fluid" src={_img_partner2} alt="" />
                   </div>
-                  <h4>Eliza Lee</h4>
-                  <p>
-                    Business often become known today through effective
-                    marketing. The marketing may be in the form of a regular
-                    item or half coulmn society news in the Sunday newspaper.
-                    The marketing may be in form...
-                  </p>
+                  <div className="container">
+                    <h4>Eliza Lee</h4>
+                    <p>
+                      Business often become known today through effective
+                      marketing. The marketing may be in the form of a regular
+                      item or half coulmn society news in the Sunday newspaper.
+                      The marketing may be in form...
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="col-sm-12 col-md-6 col-lg-4">
-                <div className="container partnerDetailsBox">
+                <div className="partnerDetailsBox">
                   <div className="parnerImgHolder">
                     <img className="img-fluid" src={_img_partner3} alt="" />
                   </div>
-                  <h4>Tillie Wolfe</h4>
-                  <p>
-                    Business often become known today through effective
-                    marketing. The marketing may be in the form of a regular
-                    item or half coulmn society news in the Sunday newspaper.
-                    The marketing may be in form...
-                  </p>
+                  <div className="container">
+                    <h4>Tillie Wolfe</h4>
+                    <p>
+                      Business often become known today through effective
+                      marketing. The marketing may be in the form of a regular
+                      item or half coulmn society news in the Sunday newspaper.
+                      The marketing may be in form...
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

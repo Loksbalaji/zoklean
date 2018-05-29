@@ -1,15 +1,12 @@
-.txtCenter {
-  text-align: center;
-}
 .banner2-outer-wrapper {
-  background: #efefef;
+  background: #f8f8f9;
   padding: 0 0 20px 0px;
 }
 .banner2-circle-img {
   max-width: 100%;
 }
 .baaner2-introPara {
-  padding: 20px 0px;
+  padding: 4rem 0px 2rem 0px;
 }
 .imgHolder {
   padding: 20px 0px;
@@ -25,6 +22,11 @@
 }
 .banner2-colPara {
   text-align: center;
-  font-size: 17px;
+  font-size: 1.1rem;
   color: #787878;
+  line-height: 1.4rem;
+  padding-top: 0.7rem;
+}
+.banner2-lightCols .imgHolder {
+  min-height: 250px;
 }

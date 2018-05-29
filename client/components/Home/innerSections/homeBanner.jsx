@@ -19,9 +19,12 @@ class HomeBanner extends React.Component {
   render() {
     return (
       <div>
-        <div className="homebanner-wrapper">
-          <div className="container">
-            <div className="row" style={_style_promoBannerBgImg}>
+        <div>
+          <div className="container md-sm-full-width">
+            <div
+              className="row homebanner-wrapper"
+              style={_style_promoBannerBgImg}
+            >
               <div className="col-sm-12 col-md-12 col-lg-7 nopadding">
                 &nbsp;
               </div>
@@ -40,10 +43,10 @@ class HomeBanner extends React.Component {
                         className=""
                       />
                       <div className="booking-hl-txt">
-                        <span>
+                        <span className="icon">
                           <img src={_img_greenTick} alt="" />
                         </span>
-                        <span>
+                        <span className="txt">
                           Service is available in your area. Do you want to book
                           a Cleaning Service.
                         </span>

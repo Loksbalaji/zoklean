@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/AvenirLTStd-Book.eot");
+  src: url("../fonts/AvenirLTStd-Book.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AvenirLTStd-Book.woff2") format("woff2"),
+    url("../fonts/AvenirLTStd-Book.woff") format("woff"),
+    url("../fonts/AvenirLTStd-Book.ttf") format("truetype"),
+    url("../fonts/AvenirLTStd-Book.svg#AvenirLTStd-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir-Roman";
+  src: url("../fonts/AvenirLTStd-Roman.eot");
+  src: url("../fonts/AvenirLTStd-Roman.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AvenirLTStd-Roman.woff2") format("woff2"),
+    url("../fonts/AvenirLTStd-Roman.woff") format("woff"),
+    url("../fonts/AvenirLTStd-Roman.ttf") format("truetype"),
+    url("../fonts/AvenirLTStd-Roman.svg#AvenirLTStd-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir-Black";
+  src: url("../fonts/AvenirLTStd-Black.eot");
+  src: url("../fonts/AvenirLTStd-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/AvenirLTStd-Black.woff2") format("woff2"),
+    url("../fonts/AvenirLTStd-Black.woff") format("woff"),
+    url("../fonts/AvenirLTStd-Black.ttf") format("truetype"),
+    url("../fonts/AvenirLTStd-Black.svg#AvenirLTStd-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -7,6 +43,22 @@ body {
 img {
   max-width: 100%;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+.container {
+  max-width: 1200px;
+}
+.pos-relative {
+  position: relative;
+}
+.pos-absolute {
+  position: absolute;
+}
+
 .zoklean-violet-gradientbg {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d00b4+0,5d00b4+52,5d00b4+52,e570e7+100 */
   background: #5d00b4; /* Old browsers */
@@ -73,4 +125,21 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.txtCenter {
+  text-align: center;
+}
+.width-80 {
+  width: 80%;
+  margin: 0 10%;
+}
+.font-avenir {
+  font-family: "Avenir", "Lato", sans-serif;
+}
+.font-avenir-roman {
+  font-family: "Avenir-Roman", "Lato", sans-serif;
+}
+.font-avenir-black {
+  font-family: "Avenir-Black", "Lato", sans-serif;
 }

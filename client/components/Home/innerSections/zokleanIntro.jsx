@@ -32,7 +32,7 @@ class ZokleanIntro extends Component {
             <div className="row banner2-lightCols">
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
-                  <div className="col-8 txtCenter">
+                  <div className="col-8 txtCenter disp-vertical-bottom">
                     <img
                       src={_img_pricing}
                       className="rounded-circle banner2-circle-img"
@@ -41,13 +41,13 @@ class ZokleanIntro extends Component {
                   </div>
                 </div>
                 <h4 className="banner2-coltit">Honest Pricing</h4>
-                <p className="banner2-colPara">
+                <p className="width-80 banner2-colPara">
                   Get a fixed rate instantly through a modern platform
                 </p>
               </div>
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
-                  <div className="col-8 txtCenter">
+                  <div className="col-8 txtCenter disp-vertical-bottom">
                     <img
                       src={_img_professional}
                       className="rounded-circle banner2-circle-img"
@@ -65,7 +65,7 @@ class ZokleanIntro extends Component {
               </div>
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
-                  <div className="col-8 txtCenter">
+                  <div className="col-8 txtCenter disp-vertical-bottom">
                     <img
                       src={_img_service}
                       className="rounded-circle banner2-circle-img"
@@ -74,7 +74,7 @@ class ZokleanIntro extends Component {
                   </div>
                 </div>
                 <h4 className="banner2-coltit">Reliable Service</h4>
-                <p className="banner2-colPara">
+                <p className="width-80 banner2-colPara">
                   Feel secure knowing that your satisfaction is guaranteed.
                 </p>
               </div>
