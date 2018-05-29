@@ -3,7 +3,7 @@ import classnames from "classnames";
 
 import zokleanHighlightsCSS from "./zokleanHighlights.css";
 
-const _img_cleanProfessional = require("../../../images/Signup/cleaningHighlights.jpg");
+const _img_cleanProfessional = require("../../../images/Home/cleaner-prof.png");
 const _img_violetTick = require("../../../images/violetHighlightBullet.png");
 
 class ZokleanHighlights extends Component {

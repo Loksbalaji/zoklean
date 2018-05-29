@@ -22,13 +22,13 @@
 .zkHighlightSectionOuterWrapper .bullet-points ul {
   width: 90%;
   list-style: none;
-  margin: 20px 5% 0;
+  margin: 2.2rem 5% 0;
   padding: 0;
   display: inline-block;
 }
 .zkHighlightSectionOuterWrapper .bullet-points ul li {
   background: #fff;
-  padding: 18px 5%;
+  padding: 1.4rem 5%;
   width: 100%;
   border-radius: 0.7rem;
   color: #787878;
@@ -39,7 +39,7 @@
   background: #00eec4;
   color: #fff;
   border-radius: 0.8rem;
-  margin: 10px 5% 30px 5%;
+  margin: 1.4rem 5% 2rem 5%;
   padding: 25px 4%;
   width: 90%;
   text-align: center;
