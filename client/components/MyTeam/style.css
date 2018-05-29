@@ -1,8 +1,9 @@
 .team-page-wrapper {
   width: 100%;
+  background: #efefef;
 }
 .team-content-holder {
-  background: #fff;
+  background: #efefef;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
