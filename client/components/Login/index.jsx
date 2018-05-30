@@ -16,8 +16,15 @@ const _style_promoBannerBgImg = {
 };
 
 class Login extends React.Component {
-  constructor() {
-    super();
+  constructor(props, context) {
+    super(props, context);
+
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+
+    this.state = {
+      show: false
+    };
   }
 
   render() {
@@ -84,8 +91,8 @@ class Login extends React.Component {
                       </a>
                     </div>
                     <div className="row justify-content-center signup-link-holder">
-                      Don't have an accout?{" "}
-                      <a className="orangeTxt signup-link" href="">
+                      Don't have an account?{" "}
+                      <a className="orangeTxt signup-link" href="/signup">
                         Sign up
                       </a>
                     </div>
@@ -95,6 +102,7 @@ class Login extends React.Component {
             </div>
           </div>
         </div>
+
         <Footer />
       </div>
     );

@@ -13,15 +13,23 @@ let _style_menu_showhide = {
 };
 
 class Header extends React.Component {
-  constructor() {
-    super();
-  }
-  Menu;
+  constructor(props, context) {
+    super(props, context);
 
-  openMenu() {
-    _style_menu_showhide = {
-      display: "inline-block"
+    this.handleNavMenuShow = this.handleNavMenuShow.bind(this);
+    this.handleNavMenuClose = this.handleNavMenuClose.bind(this);
+
+    this.state = {
+      navMenuShow: false
     };
+  }
+
+  handleNavMenuClose() {
+    this.setState({ navMenuShow: false });
+  }
+
+  handleNavMenuShow() {
+    this.setState({ navMenuShow: true });
   }
 
   render() {
@@ -35,8 +43,8 @@ class Header extends React.Component {
                   <div className="hamburger-menu">
                     <a
                       href="javascript:"
-                      onClick={this.openMenu()}
                       className="menu-icon"
+                      onClick={this.handleNavMenuShow}
                     >
                       <img src={_img_hamburger} alt="" />
                     </a>
@@ -75,7 +83,7 @@ class Header extends React.Component {
             </div>
           </div>
         </div>
-        <Menu dispProp={_style_menu_showhide} />
+        <Menu dispProp={this.state.navMenuShow} />
       </div>
     );
   }
