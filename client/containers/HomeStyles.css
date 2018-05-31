@@ -145,10 +145,13 @@ button:focus {
 .font-avenir-black {
   font-family: "Avenir-Black", "Lato", sans-serif;
 }
-.hidden-content {
+.hidden-content,
+.display-none {
   display: none;
 }
-
+.display-block {
+  display: block;
+}
 .pop-overlay {
   position: fixed;
   background: rgba(0, 0, 0, 0.7);

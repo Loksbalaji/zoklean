@@ -60,17 +60,17 @@ class Header extends React.Component {
                 <div className="header-nav-links-holder">
                   <div className="row">
                     <div className="col-sm-0 col-md-0 col-lg-1" />
-                    <div className="col-lg-2 d-none d-sm-none d-md-block d-lg-block">
+                    <div className="col-md-3 col-lg-2 d-none d-sm-none d-md-block d-lg-block">
                       <a className="loginLink" href="/login">
                         Login
                       </a>
                     </div>
-                    <div className="col-lg-3 d-none d-sm-none d-md-block d-lg-block">
+                    <div className="col-md-3 col-lg-3 d-none d-sm-none d-md-block d-lg-block">
                       <a className="signupLink" href="/signup">
                         Sign Up
                       </a>
                     </div>
-                    <div className="col-sm-10 col-md-7 col-lg-6">
+                    <div className="col-sm-10 col-md-6 col-lg-6">
                       <span>
                         <a className="greenBut" href="/contractor-signup">
                           Become a contractor
@@ -83,7 +83,10 @@ class Header extends React.Component {
             </div>
           </div>
         </div>
-        <Menu dispProp={this.state.navMenuShow} />
+        <Menu
+          dispProp={this.state.navMenuShow}
+          callback={this.handleNavMenuClose}
+        />
       </div>
     );
   }
