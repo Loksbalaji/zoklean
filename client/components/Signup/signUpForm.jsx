@@ -28,7 +28,7 @@ class SignUpForm extends React.Component {
   render() {
     return (
       <div>
-        <form name="" className="row signup-inputs-form">
+        <form name="" className="row signup-inputs-form font-avenir-roman">
           <div className="col-sm-12 col-md-6 col-lg-6">
             <div className="input-group input-group-lg input-row">
               <input
