@@ -16,15 +16,15 @@ const _style_promoBannerBgImg = {
 };
 
 class Login extends React.Component {
-  constructor() {
-    super();
+  constructor(props, context) {
+    super(props, context);
   }
 
   render() {
     return (
       <div>
         <Header />
-        <div className="container">
+        <div className="container font-avenir-roman">
           <div className="row">
             <div
               className="col-sm-12 col-md-6 col-lg-6 row-eq-height nopadding promo-section"
@@ -36,19 +36,19 @@ class Login extends React.Component {
                   <h1 className="">Login to Zoklean</h1>
                 </div>
                 <div className="row">
-                  <div className="col-sm-4 col-md-4 col-lg-4">
+                  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                     <div className="loginForm-icon-holder">
                       <img src={_img_customer_icon} alt="" />
                     </div>
                     <p>Customer</p>
                   </div>
-                  <div className="col-sm-4 col-md-4 col-lg-4">
+                  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                     <div className="loginForm-icon-holder">
                       <img src={_img_employee_icon} alt="" />
                     </div>
                     <p>Employee</p>
                   </div>
-                  <div className="col-sm-4 col-md-4 col-lg-4">
+                  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                     <div className="loginForm-icon-holder">
                       <img src={_img_contractor_icon} alt="" />
                     </div>
@@ -83,9 +83,9 @@ class Login extends React.Component {
                         Forgot Password?
                       </a>
                     </div>
-                    <div className="row justify-content-center signup-link-holder">
-                      Don't have an accout?{" "}
-                      <a className="orangeTxt signup-link" href="">
+                    <div className="row justify-content-center signup-link-holder font-lato">
+                      Don't have an account?{" "}
+                      <a className="orangeTxt signup-link" href="/signup">
                         Sign up
                       </a>
                     </div>
@@ -95,6 +95,7 @@ class Login extends React.Component {
             </div>
           </div>
         </div>
+
         <Footer />
       </div>
     );

@@ -11,17 +11,22 @@ const _style_menu_wrapper = {
 };
 
 class Menu extends React.Component {
-  constructor() {
-    super();
+  constructor(props, context) {
+    super(props, context);
+
+    this.dispProp = this.props.dispProp;
+    this.state = {
+      dispPropVal: this.dispProp
+    };
   }
 
   closeMenu() {
-    console.log("menu-close");
+    console.log(this.state.dispPropVal);
   }
 
   render() {
     return (
-      <div className="menu-page-holder" style={this.dispProp}>
+      <div className="menu-page-holder">
         <div className="menu-wrapper violet-gradientbg-light">
           <div className="menu-wrapper-bg-img" style={_style_menu_wrapper} />
           <div className="container">
@@ -41,7 +46,7 @@ class Menu extends React.Component {
                     <a href="/team">About Us</a>
                   </li>
                   <li>
-                    <a href="javascript:">Careers</a>
+                    <a href="/careers">Careers</a>
                   </li>
                   <li>
                     <a href="javascript:">FAQ</a>

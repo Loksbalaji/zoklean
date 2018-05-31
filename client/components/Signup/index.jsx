@@ -25,7 +25,7 @@ class Signup extends React.Component {
     return (
       <div>
         <Header />
-        <div className="container">
+        <div className="container font-avenir-roman">
           <div className="row">
             <div
               className="col-sm-12 col-md-5 col-lg-5 row-eq-height nopadding promo-section"
@@ -37,19 +37,19 @@ class Signup extends React.Component {
                   <h1 className="">Sign Up with Zoklean</h1>
                 </div>
                 <div className="row">
-                  <div className="col-sm-4 col-md-4 col-lg-4">
+                  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                     <div className="signupForm-icon-holder">
                       <img src={_img_customer_icon} alt="" />
                     </div>
                     <p>Customer</p>
                   </div>
-                  <div className="col-sm-4 col-md-4 col-lg-4">
+                  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                     <div className="signupForm-icon-holder">
                       <img src={_img_employee_icon} alt="" />
                     </div>
                     <p>Employee</p>
                   </div>
-                  <div className="col-sm-4 col-md-4 col-lg-4">
+                  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                     <div className="signupForm-icon-holder">
                       <img src={_img_contractor_icon} alt="" />
                     </div>

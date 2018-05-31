@@ -1,0 +1,50 @@
+.career-page-wrapper {
+  width: 100%;
+  background: #efefef;
+}
+.career-content-holder {
+  background: #fff;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.career-content-holder h1 {
+  padding: 2.5rem 0 0 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #676767;
+  line-height: 2.5rem;
+  display: inline-block;
+}
+.career-content-holder .career-tit p {
+  font-size: 1.7rem;
+  color: #676767;
+  line-height: 1.8rem;
+}
+.career-content-holder .title-openroles {
+  font-size: 2.6rem;
+  color: #676767;
+  font-weight: 600;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+.openings-list-holder {
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 5rem;
+}
+.openings-list-holder .table td,
+.openings-list-holder .table th {
+  border-top: none;
+  padding: 0.99rem;
+}
+.openings-list-holder .table th {
+  color: #50e3c2;
+  padding: 1.3rem 0.99rem;
+  font-size: 1.4rem;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background: #fff;
+}
+.table-striped tbody tr:nth-of-type(even) {
+  background: #f9f9f9;
+}

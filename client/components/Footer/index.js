@@ -24,7 +24,7 @@ class Footer extends React.Component {
                 <div className="col-sm-12 col-md-6 col-lg-2">
                   <ul>
                     <li>
-                      <a href="javascript:" title="">
+                      <a href="/careers" title="">
                         Careers
                       </a>
                     </li>

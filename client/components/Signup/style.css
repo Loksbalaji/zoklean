@@ -16,6 +16,8 @@
 
 .signupForm-icon-holder img {
   max-width: 60px;
+  margin-bottom: 0.8rem;
+  max-height: 52px;
 }
 .signup-form-wrapper .input-row {
   margin: 1rem 0px;
@@ -75,4 +77,10 @@
 }
 .signup-form-wrapper .signin-link {
   margin-left: 0.4rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .loginForm-icon-holder img {
+    max-height: 40px;
+  }
 }
