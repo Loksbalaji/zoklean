@@ -26,7 +26,6 @@ class Header extends React.Component {
   }
 
   handleNavMenuShow() {
-    console.log("handleNavMenuShow Called");
     this.setState({ navMenuShow: true });
   }
 
@@ -61,7 +60,6 @@ class Header extends React.Component {
                     <div className="col-md-3 col-lg-2 d-none d-sm-none d-md-block d-lg-block">
                       <a className="loginLink" href="/login">
                         Login
-                        </Link>
                       </a>
                     </div>
                     <div className="col-md-3 col-lg-3 d-none d-sm-none d-md-block d-lg-block">
@@ -85,7 +83,7 @@ class Header extends React.Component {
 
         <Menu
           dispProp={this.state.navMenuShow}
-          callback={this.handleNavMenuClose}
+          callback={() => this.handleNavMenuClose()}
         />
       </div>
     );

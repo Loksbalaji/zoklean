@@ -36,7 +36,7 @@ class Menu extends React.Component {
                   <a
                     href="javascript:"
                     className="close-img"
-                    onClick={this.closeMenu}
+                    onClick={() => this.closeMenu()}
                   >
                     <img src={_img_closebut} alt="" />
                   </a>
