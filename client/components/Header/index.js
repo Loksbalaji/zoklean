@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import classnames from "classnames";
 
 import style from "./style.css";
@@ -7,10 +8,6 @@ import Menu from "./menu.jsx";
 
 const _img_hamburger = require("../../images/hamburgur.png");
 const _img_zoklean_logo = require("../../images/final-logo-copy.png");
-
-let _style_menu_showhide = {
-  display: "none"
-};
 
 class Header extends React.Component {
   constructor(props, context) {
@@ -29,6 +26,7 @@ class Header extends React.Component {
   }
 
   handleNavMenuShow() {
+    console.log("handleNavMenuShow Called");
     this.setState({ navMenuShow: true });
   }
 
@@ -61,8 +59,10 @@ class Header extends React.Component {
                   <div className="row">
                     <div className="col-sm-0 col-md-0 col-lg-1" />
                     <div className="col-lg-2 d-none d-sm-none d-md-block d-lg-block">
-                      <a className="loginLink" href="/login">
+                      <a className="loginLink" href="javascript:">
+                        <Link to="/login">
                         Login
+                        </Link>
                       </a>
                     </div>
                     <div className="col-lg-3 d-none d-sm-none d-md-block d-lg-block">
@@ -83,7 +83,10 @@ class Header extends React.Component {
             </div>
           </div>
         </div>
-        <Menu dispProp={this.state.navMenuShow} />
+        {this.state.navMenuShow
+          ? <Menu closeMenuTab={this.handleNavMenuClose()} />
+          : null
+        }
       </div>
     );
   }

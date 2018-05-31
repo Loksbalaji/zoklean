@@ -13,15 +13,10 @@ const _style_menu_wrapper = {
 class Menu extends React.Component {
   constructor(props, context) {
     super(props, context);
-
-    this.dispProp = this.props.dispProp;
-    this.state = {
-      dispPropVal: this.dispProp
-    };
   }
 
   closeMenu() {
-    console.log(this.state.dispPropVal);
+    this.props.closeMenuTab()
   }
 
   render() {
@@ -35,7 +30,7 @@ class Menu extends React.Component {
                 <a
                   href="javascript:"
                   className="close-img"
-                  onClick={this.closeMenu()}
+                  onClick={() => {this.closeMenu()}}
                 >
                   <img src={_img_closebut} alt="" />
                 </a>
