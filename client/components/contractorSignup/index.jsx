@@ -24,7 +24,7 @@ class ContractorSignup extends React.Component {
       <div>
         <Header />
         <div className="container">
-          <div className="row">
+          <div className="row font-avenir-roman">
             <div
               className="col-sm-12 col-md-5 col-lg-5 row-eq-height nopadding promo-section"
               style={_style_promoBannerBgImg}

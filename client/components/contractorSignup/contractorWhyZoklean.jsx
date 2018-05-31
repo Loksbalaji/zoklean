@@ -109,7 +109,7 @@ class ContractorWhyZokleanSection extends React.Component {
             <div className="col-12">
               <div className="row justify-content-center other-highlights-sec">
                 <div className="col-sm-12 col-md-12 col-lg-6">
-                  <div className="other-highlights-box-wrapper">
+                  <div className="other-highlights-box-wrapper maxmar-left">
                     <div className="other-highlights-box violet-gradientbg-light">
                       <h3 className="green-tit">Scheduling</h3>
                       <p>Route optimization</p>
@@ -119,7 +119,7 @@ class ContractorWhyZokleanSection extends React.Component {
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-6">
-                  <div className="other-highlights-box-wrapper">
+                  <div className="other-highlights-box-wrapper maxmar-right">
                     <div className="other-highlights-box violet-gradientbg-light">
                       <h3 className="green-tit">Team Coordination</h3>
                       <p>Contact information</p>
@@ -129,7 +129,7 @@ class ContractorWhyZokleanSection extends React.Component {
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-6">
-                  <div className="other-highlights-box-wrapper">
+                  <div className="other-highlights-box-wrapper maxmar-left">
                     <div className="other-highlights-box violet-gradientbg-light">
                       <h3 className="green-tit">Customer Management</h3>
                       <p>Contact information</p>
@@ -139,7 +139,7 @@ class ContractorWhyZokleanSection extends React.Component {
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-6">
-                  <div className="other-highlights-box-wrapper">
+                  <div className="other-highlights-box-wrapper maxmar-right">
                     <div className="other-highlights-box violet-gradientbg-light">
                       <h3 className="green-tit">Business Reporting</h3>
                       <p>Route optimization</p>

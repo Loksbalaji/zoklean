@@ -115,9 +115,15 @@
   padding-top: 2rem;
 }
 .other-highlights-box-wrapper {
-  margin: 2rem 10%;
   display: inline-block;
   width: 80%;
+}
+.other-highlights-box-wrapper.maxmar-left {
+  margin: 2rem 5% 2rem 15%;
+}
+
+.other-highlights-box-wrapper.maxmar-right {
+  margin: 2rem 15% 2rem 5%;
 }
 
 .other-highlights-box {
@@ -155,4 +161,20 @@
   border-radius: 0.5rem;
   font-size: 1.5rem;
   letter-spacing: 0.04rem;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 992px) {
+  .other-highlights-box-wrapper.maxmar-left,
+  .other-highlights-box-wrapper.maxmar-right {
+    margin: 2rem 10%;
+  }
+}
+@media only screen and (max-width: 549px) {
+  .other-highlights-box-wrapper.maxmar-left,
+  .other-highlights-box-wrapper.maxmar-right {
+    margin: 2rem 0;
+  }
+  .other-highlights-box-wrapper {
+    width: 100%;
+  }
 }
