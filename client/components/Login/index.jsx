@@ -27,10 +27,10 @@ class Login extends React.Component {
         <div className="container font-avenir-roman">
           <div className="row">
             <div
-              className="col-sm-12 col-md-6 col-lg-6 row-eq-height nopadding promo-section"
+              className="d-none d-lg-block col-lg-6 row-eq-height nopadding promo-section"
               style={_style_promoBannerBgImg}
             />
-            <div className="col-sm-12 col-md-6 col-lg-6">
+            <div className="col-sm-12 col-md-12 col-lg-6">
               <div className="login-form-wrapper">
                 <div className="row justify-content-center">
                   <h1 className="">Login to Zoklean</h1>

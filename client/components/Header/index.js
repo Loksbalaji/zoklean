@@ -33,47 +33,46 @@ class Header extends React.Component {
     return (
       <div className="pos-relative">
         <div className="header-outer-wrapper violet-gradientbg-light font-avenir-roman">
-          <div className="container">
-            <div className="row">
-              <div className="col-6 col-sm-6 col-md-6 col-lg-7 disp-vertical-center nopadding-sm">
-                <div className="zoklean-logo-holder">
-                  <div className="hamburger-menu">
-                    <a
-                      href="javascript:"
-                      className="menu-icon"
-                      onClick={this.handleNavMenuShow}
-                    >
-                      <img src={_img_hamburger} alt="" />
-                    </a>
-                  </div>
-                  <div className="logo-holder">
-                    <a href="/">
-                      <img src={_img_zoklean_logo} alt="" />
-                    </a>
-                  </div>
+          <div className="row">
+            <div className="col-6 col-sm-6 col-md-5 col-lg-6 disp-vertical-center d-xs-padding-right-none">
+              <div className="zoklean-logo-holder">
+                <div className="hamburger-menu">
+                  <a
+                    href="javascript:"
+                    className="menu-icon"
+                    onClick={this.handleNavMenuShow}
+                  >
+                    <img src={_img_hamburger} alt="" />
+                  </a>
+                </div>
+                <div className="logo-holder">
+                  <Link to="/">
+                    <img src={_img_zoklean_logo} alt="" />
+                  </Link>
                 </div>
               </div>
-              <div className="col-6 col-sm-6 col-md-6 col-lg-5">
-                <div className="header-nav-links-holder">
+            </div>
+            <div className="col-6 col-sm-6 col-md-7 col-lg-6 d-xs-padding-left-none">
+              <div className="header-nav-links-holder">
+                <div className="col-12">
                   <div className="row">
-                    <div className="col-sm-0 col-md-0 col-lg-1" />
-                    <div className="col-md-3 col-lg-2 d-none d-sm-none d-md-block d-lg-block">
-                      <a className="loginLink" href="/login">
-                        Login
-                      </a>
-                    </div>
-                    <div className="col-md-3 col-lg-3 d-none d-sm-none d-md-block d-lg-block">
-                      <a className="signupLink" href="/signup">
-                        Sign Up
-                      </a>
-                    </div>
-                    <div className="col-sm-10 col-md-6 col-lg-6">
-                      <span>
-                        <a className="greenBut" href="/contractor-signup">
-                          Become a contractor
-                        </a>
-                      </span>
-                    </div>
+                    <Link
+                      className="loginLink d-none d-sm-none d-md-block d-lg-block"
+                      to="/login"
+                    >
+                      Login
+                    </Link>
+                    <Link
+                      className="signupLink d-none d-sm-none d-md-block d-lg-block"
+                      to="/signup"
+                    >
+                      Sign Up
+                    </Link>
+                    <span>
+                      <Link className="greenBut" to="/contractor-signup">
+                        Become a contractor
+                      </Link>
+                    </span>
                   </div>
                 </div>
               </div>

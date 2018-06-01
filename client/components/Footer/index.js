@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import classnames from "classnames";
 
 import style from "./style.css";
@@ -24,24 +25,24 @@ class Footer extends React.Component {
                 <div className="col-sm-12 col-md-6 col-lg-2">
                   <ul>
                     <li>
-                      <a href="/careers" title="">
+                      <Link to="/careers" title="">
                         Careers
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/team" title="">
+                      <Link to="/team" title="">
                         About us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:" title="">
+                      <Link to="/faq" title="">
                         FAQ
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:" title="">
+                      <Link to="javascript:" title="">
                         Support
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -50,24 +51,24 @@ class Footer extends React.Component {
                 <div className="col-sm-12 col-md-6 col-lg-3">
                   <ul>
                     <li>
-                      <a href="javascript:" title="">
+                      <Link to="javascript:" title="">
                         Terms
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:" title="">
+                      <Link to="javascript:" title="">
                         Privacy Policy
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:" title="">
+                      <Link to="javascript:" title="">
                         Cancellation Policy
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/contact" title="">
+                      <Link to="/contact" title="">
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -76,24 +77,24 @@ class Footer extends React.Component {
                 <div className="col-sm-12 col-md-6 col-lg-3">
                   <ul>
                     <li>
-                      <a href="javascript:" title="">
+                      <Link to="javascript:" title="">
                         Bedroom Cleaning
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:" title="">
+                      <Link to="javascript:" title="">
                         Bathroom Cleaning
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:" title="">
+                      <Link to="javascript:" title="">
                         Kitchen Cleaning
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="javascript:" title="">
+                      <Link to="javascript:" title="">
                         Commercial Cleaning
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

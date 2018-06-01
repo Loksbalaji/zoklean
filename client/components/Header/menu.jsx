@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import classnames from "classnames";
 
 import style from "./style.css";
@@ -44,22 +45,22 @@ class Menu extends React.Component {
                 <div className="col-12">
                   <ul>
                     <li>
-                      <a href="/team">About Us</a>
+                      <Link to="/team">About Us</Link>
                     </li>
                     <li>
-                      <a href="/careers">Careers</a>
+                      <Link to="/careers">Careers</Link>
                     </li>
                     <li>
-                      <a href="javascript:">FAQ</a>
+                      <Link to="/faq">FAQ</Link>
                     </li>
                     <li>
-                      <a href="javascript:">Blog</a>
+                      <Link to="javascript:">Blog</Link>
                     </li>
                     <li>
-                      <a href="/contractor-signup">Become a contractor</a>
+                      <Link to="/contractor-signup">Become a contractor</Link>
                     </li>
                     <li>
-                      <a href="/contact">Contact Us</a>
+                      <Link to="/contact">Contact Us</Link>
                     </li>
                   </ul>
                 </div>

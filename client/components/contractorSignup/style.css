@@ -177,4 +177,16 @@
   .other-highlights-box-wrapper {
     width: 100%;
   }
+  .signup-form-wrapper h1 {
+    margin-bottom: 0.5rem;
+  }
+  .contractor-signup-highlights span.txt {
+    width: 80%;
+  }
+  .contractor-cta-holder {
+    padding: 4rem 0 1rem 0;
+  }
+  .contractor-cta-holder .signup-cta {
+    padding: 1.2rem 1.3rem;
+  }
 }
