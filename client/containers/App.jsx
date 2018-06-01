@@ -13,6 +13,7 @@ import ContractorSignup from "../components/contractorSignup";
 import ContactPage from "../components/contact";
 import MyTeam from "../components/MyTeam";
 import Careers from "../components/Careers";
+import FAQPage from "../components/Faq";
 
 class App extends React.Component {
   //eslint-disable-line
@@ -27,6 +28,7 @@ class App extends React.Component {
           <PropsRoute path="/contact" component={ContactPage} />
           <PropsRoute path="/team" component={MyTeam} />
           <PropsRoute path="/careers" component={Careers} />
+          <PropsRoute path="/faq" component={FAQPage} />
           <Route component={NotFound} />
         </Switch>
       </Router>

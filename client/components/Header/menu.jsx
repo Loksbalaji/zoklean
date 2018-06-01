@@ -51,7 +51,7 @@ class Menu extends React.Component {
                       <Link to="/careers">Careers</Link>
                     </li>
                     <li>
-                      <Link to="javascript:">FAQ</Link>
+                      <Link to="/faq">FAQ</Link>
                     </li>
                     <li>
                       <Link to="javascript:">Blog</Link>
