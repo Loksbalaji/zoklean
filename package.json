@@ -9,7 +9,8 @@
     "start:client": "webpack-dev-server --config config/webpack.config.dev.js",
     "start:server": "nodemon server/bin/cluster --watch server",
     "start:server:prod": "cross-env NODE_ENV=production npm run start:server",
-    "start:tunnel": "npm run build && cross-env NODE_ENV=production npm-run-all -p start:server tunnel",
+    "start:tunnel":
+      "npm run build && cross-env NODE_ENV=production npm-run-all -p start:server tunnel",
     "tunnel": "lt --port 8000",
     "prebuild": "npm run build:clean",
     "build": "webpack --progress --config config/webpack.config.prod.js -p",
@@ -22,7 +23,8 @@
     "presetup": "npm install",
     "setup": "node setup",
     "deploy": "",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild":
+      "cd client && npm install --only=dev && npm install && npm run build"
   },
   "lint-staged": {
     "*.{js,jsx}": "lint:eslint"
@@ -33,16 +35,11 @@
   "eslintConfig": {
     "extends": "./config/.eslintrc"
   },
-  "eslintIgnore": [
-    "coverage",
-    "dist"
-  ],
+  "eslintIgnore": ["coverage", "dist"],
   "jest": {
     "collectCoverage": true,
     "testRegex": "\\.spec\\.js$",
-    "coveragePathIgnorePatterns": [
-      "/client/translations/"
-    ]
+    "coveragePathIgnorePatterns": ["/client/translations/"]
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -63,6 +60,7 @@
     "react": "^15.6.1",
     "react-collapsible": "^2.2.0",
     "react-dom": "^15.6.1",
+    "react-icons": "^2.2.7",
     "react-intl": "^2.4.0",
     "react-redux": "^5.0.6",
     "react-responsive-accordion": "^1.0.0",

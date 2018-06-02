@@ -53,34 +53,51 @@ class FAQPage extends React.Component {
                     </div>
                   </div>
 
+                  <div className="faq-accordion-content-holder">
                   <Accordion>
-                    <div data-trigger="A nifty React accordion component">
+                    <div data-trigger="1. What kinds of cleaning services do you offer?">
                       <p>
-                        So this is an Accordion component that used the{" "}
-                        <a href="https://github.com/glennflanagan/react-collapsible">
-                          react-collapsible
-                        </a>{" "}
-                        component. How handy.
+                      Zoklean is a digital booking platform for all your cleaning needs. We currently offer home cleaning services in specific areas but plan to
+expand quickly, keep your eyes out!
                       </p>
                     </div>
 
                     <div
-                      data-trigger="What the difference?"
-                      data-trigger-when-open="THAT is the difference!"
-                    >
+                      data-trigger="2. Does it cost money to join Zoklean?">
                       <p>
-                        An Accordion is different to a Collapsible in the sense
-                        that only one "tray" will be open at any one time.
+                      Zoklean is a digital booking platform for all your cleaning needs. We currently offer home cleaning services in specific areas but plan to
+expand quickly, keep your eyes out!
                       </p>
                     </div>
 
-                    <div data-trigger="I'm responsive and I have a little secret. Look inside.">
+                    <div data-trigger="3. How much does a cleaning cost?">
                       <p>
-                        And this Accordion component is also completely
-                        repsonsive. Hurrah for mobile users!
+                      Zoklean is a digital booking platform for all your cleaning needs. We currently offer home cleaning services in specific areas but plan to
+expand quickly, keep your eyes out!
+                      </p>
+                    </div>
+
+                    <div data-trigger="4. Is my credit card information safe?">
+                      <p>
+                      Zoklean is a digital booking platform for all your cleaning needs. We currently offer home cleaning services in specific areas but plan to
+expand quickly, keep your eyes out!
+                      </p>
+                    </div>
+                    <div data-trigger="5. Can I order recurring cleanings?">
+                      <p>
+                      Zoklean is a digital booking platform for all your cleaning needs. We currently offer home cleaning services in specific areas but plan to
+expand quickly, keep your eyes out!
+                      </p>
+                    </div>
+
+                    <div data-trigger="6. I want biweekly cleanings. How often will I be charged?">
+                      <p>
+                      Zoklean is a digital booking platform for all your cleaning needs. We currently offer home cleaning services in specific areas but plan to
+expand quickly, keep your eyes out!
                       </p>
                     </div>
                   </Accordion>
+                  </div>
                 </div>
               </div>
             </div>

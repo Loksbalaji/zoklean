@@ -29,3 +29,35 @@
   color: #666;
   font-size: 1rem;
 }
+.faq-qa-box .Collapsible {
+  margin: 1rem 2%;
+  width: 96%;
+  background: #f6f6f6;
+  padding: 1.5rem 2%;
+}
+.Collapsible__contentInner p {
+  margin-bottom: 0px;
+  padding: 1rem 0 0 0;
+  color: #999;
+  font-size: 1.2rem;
+}
+.Collapsible__trigger {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.faq-accordion-content-holder {
+  margin: 2rem 0 2rem 0;
+  overflow-y: auto;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 640px) {
+  .faq-qa-box .tab-holder .customer-tab,
+  .faq-qa-box .tab-holder .contractor-tab {
+    padding: 0 1.6rem;
+  }
+  .faq-qa-box .Collapsible {
+    width: 94%;
+    padding: 2rem 3%;
+  }
+}

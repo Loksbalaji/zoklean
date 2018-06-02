@@ -15,6 +15,8 @@ import MyTeam from "../components/MyTeam";
 import Careers from "../components/Careers";
 import FAQPage from "../components/Faq";
 
+import Myaccounts from "../components/Myaccounts";
+
 class App extends React.Component {
   //eslint-disable-line
   render() {
@@ -29,6 +31,9 @@ class App extends React.Component {
           <PropsRoute path="/team" component={MyTeam} />
           <PropsRoute path="/careers" component={Careers} />
           <PropsRoute path="/faq" component={FAQPage} />
+
+          <PropsRoute path="/my-accounts" component={Myaccounts} />
+
           <Route component={NotFound} />
         </Switch>
       </Router>
