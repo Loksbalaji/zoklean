@@ -1,0 +1,75 @@
+.myaccounts-outer-wrapper {
+  background: #f8f8f9;
+}
+.myaccounts-outer-wrapper .user-data-box,
+.myaccounts-outer-wrapper .booking-details-box {
+  box-shadow: 0 2px 26px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  display: inline-block;
+  width: 100%;
+}
+
+.myaccounts-outer-wrapper .user-data-box {
+  margin: 3rem 0 2rem 0;
+}
+.myaccounts-outer-wrapper .booking-details-box {
+  margin: 1rem 0 3rem 0;
+}
+
+.myaccounts-outer-wrapper .green-bar-title {
+  background: #50e3c2;
+  color: #fff;
+  font-size: 1.9rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+.myaccounts-outer-wrapper .user-data-box .disp-content {
+  width: 100%;
+  padding: 4rem 0 3rem 0;
+  font-size: 1.7rem;
+}
+.myaccounts-outer-wrapper .user-dp-holder {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 2.5rem 0;
+}
+.myaccounts-outer-wrapper .photo-update-link {
+  margin-top: 1.2rem;
+  display: inline-block;
+  color: #555;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.myaccounts-outer-wrapper .user-data-box .text-label,
+.myaccounts-outer-wrapper .user-data-box .text-value {
+  padding: 0.3rem 0;
+}
+.myaccounts-outer-wrapper .user-data-box .text-label {
+  color: #999;
+  padding-right: 1.5em;
+}
+
+@media only screen and (max-width: 640px) {
+  .myaccounts-outer-wrapper .user-data-box .disp-content {
+    padding: 1rem 0 2rem 0;
+  }
+  .myaccounts-outer-wrapper .user-data-box .text-label {
+    text-align: left !important;
+  }
+  .myaccounts-outer-wrapper .user-data-box .disp-content {
+    font-size: 1.2rem;
+  }
+  .myaccounts-outer-wrapper .user-data-box .text-label {
+    padding: 0.1rem 0;
+  }
+  .myaccounts-outer-wrapper .user-data-box .text-value {
+    padding: 0.1rem 0 0.4rem 0;
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+  .myaccounts-outer-wrapper .user-dp-holder {
+    padding-bottom: 1rem;
+  }
+}
