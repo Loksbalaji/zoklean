@@ -51,6 +51,55 @@
   padding-right: 1.5em;
 }
 
+.booking-details-list {
+  background: #f9f9f9;
+  margin: 0.5rem 0;
+}
+
+.booking-details-list .table {
+  margin-bottom: 0;
+}
+
+.booking-details-list .table td,
+.booking-details-list .table tr,
+.booking-details-list .table thead th {
+  border: none;
+  text-align: center;
+}
+.booking-details-list .table thead th {
+  padding-bottom: 0.1rem;
+  padding-top: 1.5rem;
+  font-size: 1.2em;
+  color: #9b9b9b;
+}
+.booking-details-list .table td {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.booking-details-box .title-box {
+  padding: 2rem 2% 1rem 3%;
+  width: 100%;
+}
+.booking-details-box .title-box .title {
+  font-size: 1.7rem;
+  color: #333;
+  padding-top: 0.4rem;
+}
+.booking-details-box .zk-green-but {
+  font-size: 1.4rem;
+  padding: 1.1rem 3rem;
+  border-radius: 0.8rem;
+}
+.booking-details-box .text-color-orange {
+  color: #f5a623;
+}
+.booking-details-box .text-color-green {
+  color: #7ed321;
+}
+.booking-details-box .text-color-red {
+  color: #d0021b;
+}
+
 @media only screen and (max-width: 640px) {
   .myaccounts-outer-wrapper .user-data-box .disp-content {
     padding: 1rem 0 2rem 0;

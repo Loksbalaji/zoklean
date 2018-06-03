@@ -125,6 +125,17 @@ button:focus {
   flex-direction: column;
   justify-content: flex-end;
 }
+.zk-green-but {
+  background: #50e3c2;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  line-height: normal;
+}
 
 .txtCenter {
   text-align: center;

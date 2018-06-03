@@ -1,0 +1,30 @@
+.order-summary-wrapper {
+  background: #f8f8f9;
+}
+.order-summary-wrapper .order-summary-box,
+.order-summary-wrapper .billing-info-box,
+.order-summary-wrapper .payment-info-box {
+  box-shadow: 0 2px 26px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  display: inline-block;
+  width: 100%;
+}
+
+.order-summary-wrapper .order-summary-box {
+  margin: 3rem 0 2rem 0;
+}
+.order-summary-wrapper .billing-info-box {
+  margin: 1rem 0 1rem 0;
+}
+.order-summary-wrapper .payment-info-box {
+  margin: 1rem 0 3rem 0;
+}
+
+.order-summary-wrapper .green-bar-title {
+  background: #50e3c2;
+  color: #fff;
+  font-size: 1.9rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
