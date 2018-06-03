@@ -14,6 +14,7 @@ import ContactPage from "../components/contact";
 import MyTeam from "../components/MyTeam";
 import Careers from "../components/Careers";
 import FAQPage from "../components/Faq";
+import OrderSummary from "../components/OrderSummary";
 
 import Myaccounts from "../components/Myaccounts";
 
@@ -33,6 +34,7 @@ class App extends React.Component {
           <PropsRoute path="/faq" component={FAQPage} />
 
           <PropsRoute path="/my-accounts" component={Myaccounts} />
+          <PropsRoute path="/order-summary" component={OrderSummary} />
 
           <Route component={NotFound} />
         </Switch>
