@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import classnames from "classnames";
 
 import style from "./homeBanner.css";
-import { CSSTransitionGroup } from "react-transition-group";
+import { Animated } from "react-animated-css";
 
 const _img_homeBannerBg = require("../../../images/Home/bitmap.png");
 const _img_mapPin = require("../../../images/bitmap_6.png");
@@ -30,12 +30,10 @@ class HomeBanner extends React.Component {
                 &nbsp;
               </div>
               <div className="col-sm-12 col-md-12 col-lg-5 nopadding">
-                <CSSTransitionGroup
-                  transitionName="zkSlideIn"
-                  transitionAppear={true}
-                  transitionAppearTimeout={500}
-                  transitionEnter={false}
-                  transitionLeave={false}
+                <Animated
+                  animationIn="fadeInRight"
+                  animationOut="fadeOut"
+                  isVisible={true}
                 >
                   <div className="banner-booking-holder">
                     <div className="container">
@@ -69,7 +67,7 @@ class HomeBanner extends React.Component {
                       </div>
                     </div>
                   </div>
-                </CSSTransitionGroup>
+                </Animated>
               </div>
             </div>
           </div>

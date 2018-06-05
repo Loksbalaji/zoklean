@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import classnames from "classnames";
 
 import style from "./style.css";
-import { CSSTransitionGroup } from "react-transition-group";
+import { Animated } from "react-animated-css";
 
 const _img_closebut = require("../../images/menu-close.png");
 const _img_menu_watermark = require("../../images/menu-bg.jpg");
@@ -15,6 +15,14 @@ const _style_menu_wrapper = {
 class Menu extends React.Component {
   constructor(props, context) {
     super(props, context);
+
+    this.state = {
+      windowHeight: window.innerHeight + "px"
+    };
+  }
+
+  componentWillMount() {
+    this.setState.windowHeight = window.innerHeight + "px";
   }
 
   closeMenu() {
@@ -30,12 +38,15 @@ class Menu extends React.Component {
             (this.props.dispProp ? "display-block" : "display-none")
           }
         >
-          <CSSTransitionGroup
-            transitionName="zkfade"
-            transitionEnterTimeout={500}
-            transitionLeaveTimeout={500}
+          <Animated
+            animationIn="bounceInLeft"
+            animationOut="bounceOutLeft"
+            isVisible={true}
           >
-            <div className="menu-wrapper violet-gradientbg-light">
+            <div
+              className="menu-wrapper violet-gradientbg-light"
+              style={{ "min-height": this.state.windowHeight }}
+            >
               <div
                 className="menu-wrapper-bg-img"
                 style={_style_menu_wrapper}
@@ -76,7 +87,7 @@ class Menu extends React.Component {
                 </div>
               </div>
             </div>
-          </CSSTransitionGroup>
+          </Animated>
         </div>
       </div>
     );
