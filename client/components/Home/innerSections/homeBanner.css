@@ -10,8 +10,8 @@
 .banner-booking-holder {
   background: #fff;
   border-radius: 2rem 0px 0px 2rem;
-  margin: 5rem 0 4rem 0;
-  padding: 2rem 1rem 2rem 2rem;
+  margin: 7rem 0 6rem 0;
+  padding: 3.5rem 1rem 3rem 3rem;
 }
 .booking-submit-butt {
   background: #00d0aa;
@@ -96,4 +96,13 @@
   .booking-submit-butt {
     padding: 15px 3.5rem;
   }
+}
+
+.zkSlideIn-appear {
+  position: relative;
+  right: -100%;
+}
+.zkSlideIn-appear.zkSlideIn-appear-active {
+  right: 0;
+  transition: all 0.4s ease-in;
 }
