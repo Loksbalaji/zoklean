@@ -218,3 +218,25 @@ button:focus {
 .pop-content-holder .ss-content {
   padding-bottom: 1.5rem;
 }
+
+.zkfade-appear {
+  opacity: 0.01;
+}
+.zkfade-appear.zkfade-appear-active {
+  opacity: 1;
+  transition: opacity 0.4s ease-in;
+}
+.zkfade-enter {
+  opacity: 0.01;
+}
+.zkfade-enter.zkfade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.zkfade-leave {
+  opacity: 1;
+}
+.zkfade-leave.zkfade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
