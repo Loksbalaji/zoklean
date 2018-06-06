@@ -2,20 +2,56 @@ import React, { Component } from "react";
 import classnames from "classnames";
 
 import zokleanIntroCss from "./zokleanIntro.css";
+import { Animated } from "react-animated-css";
 
 const _img_pricing = require("../../../images/pricing.png");
 const _img_professional = require("../../../images/professionals.png");
 const _img_service = require("../../../images/service.png");
 
 class ZokleanIntro extends Component {
-  constructor() {
-    super();
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      showText: false
+    };
+  }
+
+  componentDidMount() {
+    var offsetSectionHeight = parseInt(
+      this.refs.banner2OuterWrapper.offsetHeight
+    );
+    window.addEventListener(
+      "scroll",
+      this._calcScroll.bind(this, offsetSectionHeight)
+    );
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this._calcScroll);
+  }
+
+  _calcScroll(offsetSectionHeight) {
+    var _window = window;
+    var heightDiff = parseInt(offsetSectionHeight);
+    var scrollPos = _window.scrollY;
+    if (scrollPos > heightDiff - 150) {
+      // here this means user has scrolled past your header,
+      // you may rerender by setting State or do whatever
+      this.setState({
+        showText: true
+      });
+    } else {
+      // here the user has scrolled back to header's territory,
+      // it's optional here for you to remove the element on navbar as stated in the question or not
+      this.setState({});
+    }
   }
 
   render() {
     return (
       <div>
-        <div className="banner2-outer-wrapper">
+        <div className="banner2-outer-wrapper" ref="banner2OuterWrapper">
           <div className="container">
             <div className="row">
               <div className="baaner2-introPara">
@@ -33,11 +69,21 @@ class ZokleanIntro extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter disp-vertical-bottom">
-                    <img
-                      src={_img_pricing}
-                      className="rounded-circle banner2-circle-img"
-                      alt="Cinque Terre"
-                    />
+                    {this.state.showText ? (
+                      <Animated
+                        animationIn="zoomIn"
+                        animationOut="fadeOut"
+                        isVisible={true}
+                      >
+                        <img
+                          src={_img_pricing}
+                          className="rounded-circle banner2-circle-img"
+                          alt="Cinque Terre"
+                        />
+                      </Animated>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
                 <h4 className="banner2-coltit">Honest Pricing</h4>
@@ -48,11 +94,21 @@ class ZokleanIntro extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter disp-vertical-bottom">
-                    <img
-                      src={_img_professional}
-                      className="rounded-circle banner2-circle-img"
-                      alt="Cinque Terre"
-                    />
+                    {this.state.showText ? (
+                      <Animated
+                        animationIn="zoomIn"
+                        animationOut="fadeOut"
+                        isVisible={true}
+                      >
+                        <img
+                          src={_img_professional}
+                          className="rounded-circle banner2-circle-img"
+                          alt="Cinque Terre"
+                        />
+                      </Animated>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
                 <h4 className="banner2-coltit">
@@ -66,11 +122,21 @@ class ZokleanIntro extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter disp-vertical-bottom">
-                    <img
-                      src={_img_service}
-                      className="rounded-circle banner2-circle-img"
-                      alt="Cinque Terre"
-                    />
+                    {this.state.showText ? (
+                      <Animated
+                        animationIn="zoomIn"
+                        animationOut="fadeOut"
+                        isVisible={true}
+                      >
+                        <img
+                          src={_img_service}
+                          className="rounded-circle banner2-circle-img"
+                          alt="Cinque Terre"
+                        />
+                      </Animated>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
                 <h4 className="banner2-coltit">Reliable Service</h4>

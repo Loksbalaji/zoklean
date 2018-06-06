@@ -45,7 +45,7 @@ class Menu extends React.Component {
           >
             <div
               className="menu-wrapper violet-gradientbg-light"
-              style={{ "min-height": this.state.windowHeight }}
+              style={{ minHeight: this.state.windowHeight }}
             >
               <div
                 className="menu-wrapper-bg-img"
