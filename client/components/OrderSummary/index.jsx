@@ -37,12 +37,14 @@ class OrderSummary extends React.Component {
                 </div>
                 <div className="order-details-holder">
                   <div className="col-12">
-                    <div className="row">
+                    <div className="row flex-container">
                       <div className="col-12 col-sm-12 col-md-4 col-lg-3">
-                        <div className="order-type-icon">
+                        <div className="order-type-icon row justify-content-center">
                           <img src={_img_homeIconImg} alt="" />
                         </div>
-                        <p>Domestic</p>
+                        <div className="row justify-content-center">
+                          <p>Domestic</p>
+                        </div>
                       </div>
                       <div className="col-12 col-sm-12 col-md-8 col-lg-6">
                         <div className="row">

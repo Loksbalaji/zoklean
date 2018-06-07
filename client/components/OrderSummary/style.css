@@ -28,3 +28,11 @@
   text-align: center;
   padding: 1rem 0;
 }
+.order-summary-wrapper .flex-container {
+  align-items: center;
+  padding: 2rem 0;
+}
+.order-details-holder .grey-txt {
+  color: #888;
+  font-size: 1.4rem;
+}

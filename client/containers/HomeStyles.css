@@ -240,3 +240,6 @@ button:focus {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
 }
+.flex-container {
+  display: flex;
+}

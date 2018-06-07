@@ -7,6 +7,7 @@
 }
 .baaner2-introPara {
   padding: 4rem 0px 2rem 0px;
+  transition: opacity 0.3s ease-in;
 }
 .imgHolder {
   padding: 20px 0px;

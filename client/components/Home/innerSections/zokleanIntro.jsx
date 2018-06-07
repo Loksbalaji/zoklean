@@ -13,7 +13,7 @@ class ZokleanIntro extends Component {
     super(props, context);
 
     this.state = {
-      showText: false
+      showAnimation: false
     };
   }
 
@@ -39,7 +39,7 @@ class ZokleanIntro extends Component {
       // here this means user has scrolled past your header,
       // you may rerender by setting State or do whatever
       this.setState({
-        showText: true
+        showAnimation: true
       });
     } else {
       // here the user has scrolled back to header's territory,
@@ -69,7 +69,7 @@ class ZokleanIntro extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter disp-vertical-bottom">
-                    {this.state.showText ? (
+                    {this.state.showAnimation ? (
                       <Animated
                         animationIn="zoomIn"
                         animationOut="fadeOut"
@@ -94,7 +94,7 @@ class ZokleanIntro extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter disp-vertical-bottom">
-                    {this.state.showText ? (
+                    {this.state.showAnimation ? (
                       <Animated
                         animationIn="zoomIn"
                         animationOut="fadeOut"
@@ -122,7 +122,7 @@ class ZokleanIntro extends Component {
               <div className="col-sm-12 col-md-6 col-lg-4">
                 <div className="row justify-content-center imgHolder">
                   <div className="col-8 txtCenter disp-vertical-bottom">
-                    {this.state.showText ? (
+                    {this.state.showAnimation ? (
                       <Animated
                         animationIn="zoomIn"
                         animationOut="fadeOut"

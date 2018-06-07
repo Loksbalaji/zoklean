@@ -34,6 +34,9 @@
   color: #787878;
   margin: 23px 0px;
   font-size: 1.6em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .zkHighlightSectionOuterWrapper .zkgreen-cta-butt {
   background: #00eec4;
