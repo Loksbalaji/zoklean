@@ -18,9 +18,7 @@ class ZokleanIntro extends Component {
   }
 
   componentDidMount() {
-    var offsetSectionHeight = parseInt(
-      this.refs.banner2OuterWrapper.offsetHeight
-    );
+    var offsetSectionHeight = parseInt(this.refs.banner2OuterWrapper.offsetTop);
     window.addEventListener(
       "scroll",
       this._calcScroll.bind(this, offsetSectionHeight)
@@ -36,14 +34,10 @@ class ZokleanIntro extends Component {
     var heightDiff = parseInt(offsetSectionHeight);
     var scrollPos = _window.scrollY;
     if (scrollPos > heightDiff - 150) {
-      // here this means user has scrolled past your header,
-      // you may rerender by setting State or do whatever
       this.setState({
         showAnimation: true
       });
     } else {
-      // here the user has scrolled back to header's territory,
-      // it's optional here for you to remove the element on navbar as stated in the question or not
       this.setState({});
     }
   }

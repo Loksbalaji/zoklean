@@ -9,6 +9,8 @@ import MeetOurPartners from "./innerSections/meetPartners.jsx";
 import ZokleanHighlights from "./innerSections/zokleanHighlights.jsx";
 import FindusNearyou from "./innerSections/findusNearyou.jsx";
 import ClientsCorner from "./innerSections/clientsCorner.jsx";
+import HowItWorks from "./innerSections/howItWorks";
+import Testimonial from "./innerSections/testimonial";
 import Footer from "../Footer";
 
 class HomePage extends React.Component {
@@ -22,9 +24,11 @@ class HomePage extends React.Component {
         <Header />
         <HomeBanner />
         <ZokleanIntro />
+        <HowItWorks />
         <MeetOurPartners />
         <ZokleanHighlights />
         <FindusNearyou />
+        <Testimonial />
         <ClientsCorner />
         <Footer />
       </div>
