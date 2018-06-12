@@ -18,6 +18,37 @@ class BillingInfo extends React.Component {
             <div className="container">
               <div className="col-12">
                 <div className="title">Billing Info</div>
+                <div className="billing-form-holder col-12">
+                  <div className="input-row">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+                      <input type="text" placeholder="First Name*" />
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-6">
+                      <input type="text" placeholder="Last Name*" />
+                    </div>
+                  </div>
+                  <div className="input-row">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-12">
+                      <input type="text" placeholder="Address*" />
+                    </div>
+                  </div>
+                  <div className="input-row">
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-4">
+                      <input type="text" placeholder="City*" />
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-4">
+                      <input type="text" placeholder="State*" />
+                    </div>
+                  </div>
+                  <div className="input-row">
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-4">
+                      <input type="text" placeholder="Phone Number*" />
+                    </div>
+                    <div className="col-12 col-sm-12 col-md-6 col-lg-4">
+                      <input type="text" placeholder="Email Address*" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

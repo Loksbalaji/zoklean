@@ -1,5 +1,51 @@
-.testi-title h3 {
+.testimonial-wrapper {
+  background: #efefef;
+  padding: 1.5rem 0 0 0;
+}
+.testimonial-box-holder {
+  padding: 1rem 0 4rem 0;
+}
+.testimonial-wrapper .testi-title h3 {
   font-size: 1.9rem;
   font-weight: bold;
   padding-bottom: 0px;
 }
+.testimonial-wrapper .testi-box {
+  max-width: 600px;
+  border: 1px solid #ddd;
+  font-size: 1.25rem;
+  margin: 1.5rem 2rem 1.5rem 0rem;
+  padding: 1.2rem 0.5rem 1rem 0.5rem;
+  background: #fff;
+  color: #666;
+}
+.testimonial-wrapper .testi-box .row1,
+.testimonial-wrapper .testi-box .name-and-rating {
+  display: flex;
+  align-items: center;
+}
+.testimonial-wrapper .testi-box .name-rating-sec {
+  padding-top: 0.65rem;
+}
+.testimonial-wrapper .testi-box .name-and-rating {
+  margin-bottom: 0.3rem;
+  color: #333;
+  font-size: 1.35rem;
+}
+.testimonial-wrapper .testi-box .rating {
+  display: flex;
+  margin-left: 0.8rem;
+}
+.testimonial-wrapper .testi-box .rating i {
+  padding: 0 0.2rem;
+}
+.testimonial-wrapper .testi-box .row2 p {
+  margin-bottom: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+/* @media only screen and (max-width: 640px) {
+  .testimonial-wrapper .testi-box {
+    max-width: 100%;
+  }
+} */

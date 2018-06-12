@@ -43,11 +43,11 @@ class OrderSummary extends React.Component {
                           <img src={_img_homeIconImg} alt="" />
                         </div>
                         <div className="row justify-content-center">
-                          <p>Domestic</p>
+                          <p className="cleaning-type-txt">Domestic</p>
                         </div>
                       </div>
                       <div className="col-12 col-sm-12 col-md-8 col-lg-6">
-                        <div className="row">
+                        <div className="row address-line">
                           <div className="d-flex">
                             <div className="label-txt">Zip Code</div>
                             <div className="ml-auto">
@@ -55,7 +55,7 @@ class OrderSummary extends React.Component {
                             </div>
                           </div>
                         </div>
-                        <div className="row">
+                        <div className="row address-line">
                           <div className="d-flex">
                             <div className="label-txt">Cleaning Type</div>
                             <div className="ml-auto">
@@ -66,7 +66,7 @@ class OrderSummary extends React.Component {
                           </div>
                         </div>
                       </div>
-                      <div className="col-12 col-sm-12 col-md-12 col-lg-3">
+                      <div className="col-12 col-sm-12 col-md-12 col-lg-3 date-details-display">
                         <div className="grey-txt">Booking Date</div>
                         <div className="date">23/07/2018</div>
                         <div className="time">
@@ -77,8 +77,8 @@ class OrderSummary extends React.Component {
                   </div>
 
                   <div className="col-12">
-                    <div className="row">
-                      <div className="col-12 col-sm-12 col-md-12 col-lg-8">
+                    <div className="row billing-data-line">
+                      <div className="col-12 col-sm-12 col-md-12 col-lg-9">
                         <div className="row">
                           <div className="col-12 col-sm-12 col-md-12 col-lg-4">
                             <div className="area-name">1500 Square Footage</div>
@@ -91,12 +91,10 @@ class OrderSummary extends React.Component {
                           </div>
                         </div>
                       </div>
-                      <div className="col-12 col-sm-12 col-md-12 col-lg-4">
-                        <div className="row">
-                          <div className="col-12">
-                            <div className="grey-txt">Billing Amount</div>
-                            <div className="price">$ 117</div>
-                          </div>
+                      <div className="col-12 col-sm-12 col-md-12 col-lg-3">
+                        <div className="row price-display">
+                          <div className="grey-txt">Billing Amount</div>
+                          <div className="price">$ 117</div>
                         </div>
                       </div>
                     </div>

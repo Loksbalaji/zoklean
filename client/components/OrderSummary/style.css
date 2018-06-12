@@ -33,6 +33,39 @@
   padding: 2rem 0;
 }
 .order-details-holder .grey-txt {
-  color: #888;
+  color: #aaa;
   font-size: 1.4rem;
+}
+.order-summary-wrapper .cleaning-type-txt {
+  color: #222;
+  padding-top: 0.8rem;
+  font-size: 1.35rem;
+}
+.order-summary-box {
+  font-size: 1.3rem;
+}
+.order-summary-box .label-txt {
+  color: #ccc;
+  padding-right: 1rem;
+}
+.order-summary-box .address-line {
+  padding-bottom: 1rem;
+}
+.order-summary-box .billing-data-line {
+  padding: 0 0 3rem 0;
+}
+.order-summary-box .date-details-display,
+.order-summary-box .price-display,
+.order-details-holder .price-display .grey-txt {
+  width: 100%;
+  text-align: center;
+}
+.order-summary-box .date-details-display .date {
+  padding-top: 1rem;
+}
+.order-summary-box .price-display .price {
+  width: 100%;
+  color: #f5a623;
+  font-size: 2.2rem;
+  padding-top: 1rem;
 }
