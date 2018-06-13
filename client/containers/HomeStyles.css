@@ -243,3 +243,47 @@ button:focus {
 .flex-container {
   display: flex;
 }
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border: 1px solid #4a4a4a;
+  padding: 1.2rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.6rem;
+  background: #fff;
+  width: 100%;
+  margin: 0.3rem 0;
+}
+
+select {
+  width: 100%;
+  background: #fff;
+  font-size: 1.2rem;
+  -webkit-appearance: none;
+  padding: 1.2rem 1rem;
+  color: #4a4a4a;
+  border-radius: 0.6rem;
+  margin: 0.3rem 0;
+  border: 1px solid #4a4a4a;
+}
+select option:disabled {
+  color: #d1d1d1;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+  color: #d1d1d1;
+}
+
+@media only screen and (max-width: 640px) {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    margin: 1rem 0;
+  }
+  .d-sm-nopadding {
+    padding: 0;
+  }
+}

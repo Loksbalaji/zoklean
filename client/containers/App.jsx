@@ -14,9 +14,10 @@ import ContactPage from "../components/contact";
 import MyTeam from "../components/MyTeam";
 import Careers from "../components/Careers";
 import FAQPage from "../components/Faq";
-import OrderSummary from "../components/OrderSummary";
 
 import Myaccounts from "../components/Myaccounts";
+import OrderSummary from "../components/OrderSummary";
+import BookCleaning from "../components/BookCleaning";
 
 class App extends React.Component {
   //eslint-disable-line
@@ -35,6 +36,7 @@ class App extends React.Component {
 
           <PropsRoute path="/my-accounts" component={Myaccounts} />
           <PropsRoute path="/order-summary" component={OrderSummary} />
+          <PropsRoute path="/book-cleaning" component={BookCleaning} />
 
           <Route component={NotFound} />
         </Switch>
@@ -49,4 +51,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => bindActionCreators(actions, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
