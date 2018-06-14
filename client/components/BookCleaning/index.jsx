@@ -5,8 +5,11 @@ import style from "./style.css";
 
 import Header from "../Header";
 import Footer from "../Footer";
+import DomesticBooking from "./DomesticBooking";
+import ComercialBooking from "./ComercialBooking";
 
 const _img_domestic_icon = require("../../images/home.png");
+const _img_comercial_icon = require("../../images/cleaning/office.png");
 
 class BookCleaning extends React.Component {
   constructor() {
@@ -40,7 +43,7 @@ class BookCleaning extends React.Component {
                       </a>
                       <a className="tab-link" href="javascript:" title="">
                         <div className="icon-holder">
-                          <img src={_img_domestic_icon} alt="" />
+                          <img src={_img_comercial_icon} alt="" />
                         </div>
                         <span className="row type-txt">Comercial</span>
                       </a>
@@ -48,8 +51,8 @@ class BookCleaning extends React.Component {
                   </div>
 
                   <div className="booking-form-holder">
-                    {/* <DomesticBooking />
-                    <ComercialBooking /> */}
+                    <DomesticBooking />
+                    {/* <ComercialBooking /> */}
                   </div>
                 </div>
               </div>

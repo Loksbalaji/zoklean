@@ -1,0 +1,63 @@
+.domestic-form-holder {
+  width: 100%;
+  padding: 0.2rem 0 4rem 0;
+}
+.domestic-form-holder .prop-title {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+.domestic-form-holder .ques {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.room-selection {
+  margin: 3rem 0 4rem;
+}
+.room-selection .no-of-rooms {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+.room-selection .no-of-rooms img {
+  max-width: 120px;
+  max-height: 120px;
+}
+.room-selection .no-of-rooms p.txt {
+  font-size: 1.1rem;
+  margin: 0.4rem 0 0.6rem 0;
+}
+.selector-inc-dec {
+  border: 1px solid #ccc;
+  max-width: 150px;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.selector-inc-dec .dec,
+.selector-inc-dec .inc,
+.selector-inc-dec .disp {
+  text-align: center;
+  padding: 0.3rem 0.5rem;
+  display: inline-block;
+}
+.selector-inc-dec .dec,
+.selector-inc-dec .inc {
+  background: #f8f8f8;
+  width: 30%;
+  cursor: pointer;
+}
+.selector-inc-dec .dec {
+  border-right: 1px solid #ccc;
+}
+.selector-inc-dec .inc {
+  border-left: 1px solid #ccc;
+}
+.selector-inc-dec .disp {
+  width: 40%;
+}
+.add-on-services .txt {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 0.4rem 0;
+}

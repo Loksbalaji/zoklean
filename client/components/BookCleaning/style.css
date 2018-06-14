@@ -20,7 +20,7 @@
   padding: 1rem 0 2rem 0;
 }
 .book-cleaning-wrapper .tab-link {
-  margin: 0 3rem;
+  margin: 0 4rem;
   opacity: 0.5;
   text-decoration: none;
 }
@@ -38,6 +38,7 @@
   width: 100%;
   text-align: center;
 }
-.book-cleaning-wrapper .icon-holder img {
+.book-cleaning-wrapper .toggle-booking-type-holder .icon-holder img {
   max-width: 65px;
+  max-height: 65px;
 }
