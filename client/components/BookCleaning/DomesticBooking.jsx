@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import classnames from "classnames";
+import Slider, { Range } from "rc-slider";
+import Tooltip from "rc-tooltip";
 
-import style from "./domesticBooking.css";
+import style from "./booking.css";
+import "rc-slider/assets/index.css";
 
 const _img_bedicon_mainselec = require("../../images/cleaning/bed-cir.png");
 const _img_bathicon_mainselec = require("../../images/cleaning/bath-cir.png");
@@ -14,11 +17,28 @@ const _img_addon_service_5 = require("../../images/cleaning/addon-service-5.png"
 const _img_addon_service_6 = require("../../images/cleaning/addon-service-6.png");
 
 class DomesticBooking extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
+    const Handle = Slider.Handle;
+
+    const handle = props => {
+      const { value, dragging, index, ...restProps } = props;
+      return (
+        <Tooltip
+          prefixCls="rc-slider-tooltip"
+          overlay={value}
+          visible={dragging}
+          placement="top"
+          key={index}
+        >
+          <Handle value={value} {...restProps} />
+        </Tooltip>
+      );
+    };
+
     return (
       <div>
         <div className="domestic-form-holder">
@@ -109,9 +129,17 @@ class DomesticBooking extends React.Component {
               </div>
             </div>
 
-            <div className="input-row row">
+            <div className="input-row row rate-status">
               <div className="row justify-content-center col-12">
                 <p className="ques">Rate the current condition of your house</p>
+                <div className="col-12 row justify-content-md-center">
+                  <span className="rate-clean-status violet-gradientbg-light">
+                    1
+                  </span>
+                </div>
+                <div className="col-12 col-sm-12 col-md-9 col-lg-7 row justify-content-md-center">
+                  <Slider min={1} max={10} defaultValue={1} handle={handle} />
+                </div>
               </div>
             </div>
 

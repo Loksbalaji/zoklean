@@ -42,3 +42,34 @@
   max-width: 65px;
   max-height: 65px;
 }
+
+/* Billing details box */
+.details-sec-wrapper {
+  width: 100%;
+  padding: 1rem 0;
+}
+.details-sec-wrapper .sec-list {
+  padding-bottom: 1rem;
+}
+.details-sec-wrapper .sec-list .sec-list-tit {
+  color: #aaa;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.details-sec-wrapper .cleaning-type-title-holder {
+  padding: 0.4rem 0;
+}
+.details-sec-wrapper .disp-info-row {
+  font-size: 1.2rem;
+  padding: 0.35rem 0;
+  color: #4a4a4a;
+}
+.coupon-code-holder .input-coupon-text {
+  padding: 1rem;
+}
+.coupon-code-holder .zk-green-but {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.3rem 0;
+  border: 1px solid transparent;
+}

@@ -61,3 +61,12 @@
   font-size: 0.9rem;
   margin: 0.4rem 0;
 }
+.rate-status .rate-clean-status {
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  text-align: center;
+}

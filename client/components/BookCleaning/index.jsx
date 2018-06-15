@@ -52,14 +52,108 @@ class BookCleaning extends React.Component {
 
                   <div className="booking-form-holder">
                     <DomesticBooking />
-                    {/* <ComercialBooking /> */}
+                    <ComercialBooking />
                   </div>
                 </div>
               </div>
+
               <div className="col-12 col-sm-12 col-md-12 col-lg-4">
-                <div className="billing-details-box">
+                <div className="billing-details-box col-12 row">
                   <div className="sec-title">
                     <h2>Billing Details</h2>
+                  </div>
+                  <div className="details-sec-wrapper">
+                    <div className="sec-list col-12">
+                      <div
+                        className="cleaning-type-title-holder row"
+                        style={{ paddingBottom: "0.95rem" }}
+                      >
+                        <span className="sec-list-tit col-12 nopadding">
+                          Cleaning Type
+                        </span>
+                        <span
+                          className="col-12 nopadding"
+                          style={{
+                            fontSize: "1.2rem"
+                          }}
+                        >
+                          Standard (Just This Once)
+                        </span>
+                      </div>
+
+                      <div className="disp-info-row d-flex">
+                        <span>Bedroom</span>
+                        <span className="ml-auto">1</span>
+                      </div>
+                      <div className="disp-info-row d-flex">
+                        <span>Bathroom</span>
+                        <span className="ml-auto">1</span>
+                      </div>
+                    </div>
+
+                    <div className="sec-list col-12">
+                      <div className="cleaning-type-title-holder row">
+                        <span className="sec-list-tit col-12 nopadding">
+                          Add On Services
+                        </span>
+                      </div>
+
+                      <div className="disp-info-row d-flex">
+                        <span>Blinds</span>
+                        <span className="ml-auto">-</span>
+                      </div>
+                      <div className="disp-info-row d-flex">
+                        <span>Fridge</span>
+                        <span className="ml-auto">-</span>
+                      </div>
+                      <div className="disp-info-row d-flex">
+                        <span>Ovan</span>
+                        <span className="ml-auto">-</span>
+                      </div>
+                      <div className="disp-info-row d-flex">
+                        <span>Walls</span>
+                        <span className="ml-auto">-</span>
+                      </div>
+                      <div className="disp-info-row d-flex">
+                        <span>Window</span>
+                        <span className="ml-auto">-</span>
+                      </div>
+                    </div>
+
+                    <div className="sec-list col-12 row coupon-code-holder">
+                      <div className="cleaning-type-title-holder col-12 row nopadding">
+                        <span className="sec-list-tit">Apply Coupon</span>
+                      </div>
+                      <div className="col-12 col-sm-1 col-md-12 col-lg-7 nopadding">
+                        <input
+                          className="input-coupon-text"
+                          type="text"
+                          placeholder="Coupon Code"
+                          name="coupon-code"
+                        />
+                      </div>
+                      <div className="col-12 col-sm-1 col-md-12 col-lg-5 noPaddingRight">
+                        <button className="zk-green-but">Apply</button>
+                      </div>
+                    </div>
+
+                    <div className="sec-list col-12 billing-info-holder">
+                      <div className="cleaning-type-title-holder row">
+                        <span className="sec-list-tit col-12 nopadding">
+                          Billing Amount
+                        </span>
+                      </div>
+                      <div className="disp-info-row d-flex">
+                        <span className="label-total-txt">Total</span>
+                        <span className="ml-auto orangeTxt">$ 117</span>
+                      </div>
+                    </div>
+
+                    <div className="sec-list col-12 submit-form-cta">
+                      <div className="disp-info-row d-flex col-12">
+                        <button className="zk-green-but">Continue</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
