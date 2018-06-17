@@ -9,14 +9,35 @@ const _img_relax = require("../../../images/Home/relax.png");
 const _img_book = require("../../../images/Home/book.png");
 
 class HowItWorks extends Component {
-  constructor() {
-    super();
+  constructor(props, context) {
+    super(props, context);
+  }
+
+  myFunction(timeline_line, length, offsetTopOfHIWSec) {
+    let scrollpercent = offsetTopOfHIWSec / window.scrollY;
+
+    let draw = length * scrollpercent;
+    timeline_line.style.strokeDasharray = [length - draw, length];
+  }
+
+  componentDidMount() {
+    let timeline_line = document.getElementById("drawline");
+    var length = timeline_line.getTotalLength();
+    let offsetTopOfHIWSec = parseInt(this.refs.timelineWrap.offsetHeight);
+    window.addEventListener(
+      "scroll",
+      this.myFunction.bind(this, timeline_line, length, offsetTopOfHIWSec)
+    );
   }
 
   render() {
     return (
       <div>
-        <section className="timeline-wrap" style={{ display: "block" }}>
+        <section
+          className="timeline-wrap"
+          ref="timelineWrap"
+          style={{ display: "block" }}
+        >
           <div className="container font-avenir-roman">
             <div className="animation-block" style={{ position: "relative" }}>
               <div className="col-12 nopadding">
@@ -58,7 +79,7 @@ class HowItWorks extends Component {
 									V709 A 20 20, 0, 0, 0, 30 729H780 A 20 20, 0, 0, 1, 800 749
 							V 900"
                         id="drawline"
-                        style={{ strokeDasharray: "2047.87, 2066.36" }}
+                        // style={{ strokeDasharray: "2047.87, 2066.36" }}
                       />
                     </svg>
                   </div>
