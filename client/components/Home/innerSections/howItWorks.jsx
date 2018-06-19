@@ -13,11 +13,14 @@ class HowItWorks extends Component {
     super(props, context);
   }
 
-  myFunction(timeline_line, length, offsetTopOfHIWSec) {
-    let scrollpercent = offsetTopOfHIWSec / window.scrollY;
-
-    let draw = length * scrollpercent;
-    timeline_line.style.strokeDasharray = [length - draw, length];
+  findScrollAndUpdateColor(timeline_line, length, offsetTopOfHIWSec) {
+    var length = 100;
+    var pathLength = timeline_line.getTotalLength() - 600;
+    var distanceFromTop =
+      this.refs.timelineWrap.offsetTop - document.documentElement.scrollTop;
+    var percentDone = 1 - distanceFromTop / this.refs.timelineWrap.offsetHeight;
+    length = percentDone * pathLength - 1150;
+    timeline_line.style.strokeDasharray = [length, pathLength];
   }
 
   componentDidMount() {
@@ -26,7 +29,12 @@ class HowItWorks extends Component {
     let offsetTopOfHIWSec = parseInt(this.refs.timelineWrap.offsetHeight);
     window.addEventListener(
       "scroll",
-      this.myFunction.bind(this, timeline_line, length, offsetTopOfHIWSec)
+      this.findScrollAndUpdateColor.bind(
+        this,
+        timeline_line,
+        length,
+        offsetTopOfHIWSec
+      )
     );
   }
 
