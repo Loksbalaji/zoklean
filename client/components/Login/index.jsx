@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classnames from "classnames";
+import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 import style from "./style.css";
 
@@ -18,7 +19,25 @@ const _style_promoBannerBgImg = {
 class Login extends React.Component {
   constructor(props, context) {
     super(props, context);
+    this.state = {
+      email: "",
+      password: ""
+    };
   }
+
+  validateForm() {
+    return this.state.email.length > 0 && this.state.password.length > 0;
+  }
+
+  handleChange = event => {
+    this.setState({
+      [event.target.id]: event.target.value
+    });
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+  };
 
   render() {
     return (
@@ -35,47 +54,59 @@ class Login extends React.Component {
                 <div className="row justify-content-center">
                   <h1 className="">Login to Zoklean</h1>
                 </div>
-                <div className="row">
-                  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
-                    <div className="loginForm-icon-holder">
-                      <img src={_img_customer_icon} alt="" />
-                    </div>
-                    <p>Customer</p>
-                  </div>
-                  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
-                    <div className="loginForm-icon-holder">
-                      <img src={_img_employee_icon} alt="" />
-                    </div>
-                    <p>Employee</p>
-                  </div>
-                  <div className="col-4 col-sm-4 col-md-4 col-lg-4">
-                    <div className="loginForm-icon-holder">
-                      <img src={_img_contractor_icon} alt="" />
-                    </div>
-                    <p>Contractor</p>
-                  </div>
-                </div>
+
                 <div className="container">
-                  <form name="">
-                    <div className="input-group input-group-lg input-row">
-                      <input
-                        className="form-control"
-                        aria-label="Large"
-                        type="text"
-                        placeholder="Enter Email Address"
-                      />
+                  <form name="loginForm" onSubmit={this.handleSubmit}>
+                    <div className="row login-type">
+                      <div className="col-4 col-sm-4 col-md-4 col-lg-4">
+                        <div className="loginForm-icon-holder">
+                          <img src={_img_customer_icon} alt="" />
+                        </div>
+                        <p>Customer</p>
+                      </div>
+                      <div className="col-4 col-sm-4 col-md-4 col-lg-4">
+                        <div className="loginForm-icon-holder">
+                          <img src={_img_employee_icon} alt="" />
+                        </div>
+                        <p>Employee</p>
+                      </div>
+                      <div className="col-4 col-sm-4 col-md-4 col-lg-4">
+                        <div className="loginForm-icon-holder">
+                          <img src={_img_contractor_icon} alt="" />
+                        </div>
+                        <p>Contractor</p>
+                      </div>
                     </div>
-                    <div className="input-group input-group-lg input-row">
-                      <input
-                        className="form-control"
-                        aria-label="Large"
+
+                    {/* <div className="input-group input-group-lg input-row"> */}
+                    <FormGroup controlId="email" bsSize="large">
+                      <FormControl
+                        type="email"
+                        placeholder="Enter Email Address"
+                        value={this.state.email}
+                        onChange={this.handleChange}
+                      />
+                    </FormGroup>
+                    {/* </div> */}
+
+                    <FormGroup controlId="password" bsSize="large">
+                      <FormControl
                         type="password"
                         placeholder="Password"
+                        value={this.state.password}
+                        onChange={this.handleChange}
                       />
-                    </div>
+                    </FormGroup>
+
                     <div className="input-group justify-content-center input-row margin-bottom-1rem">
                       <div className="col-7">
-                        <button className="greenBut">LOGIN</button>
+                        <button
+                          className="greenBut"
+                          disabled={!this.validateForm()}
+                          type="submit"
+                        >
+                          LOGIN
+                        </button>
                       </div>
                     </div>
                     <div className="row justify-content-center">

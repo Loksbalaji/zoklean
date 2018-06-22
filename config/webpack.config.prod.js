@@ -15,7 +15,15 @@ module.exports = {
   resolve: { extensions: [".js", ".jsx"] },
   module: {
     loaders: [
-      { test: /\.(js|jsx)$/, loader: "babel-loader", exclude: /node_modules/ },
+      {
+        test: /\.(js|jsx)$/,
+        loader: "babel-loader",
+        exclude: /node_modules/,
+        query: {
+          presets: ["react", "es2015"],
+          plugins: ["transform-class-properties"]
+        }
+      },
       {
         test: /\.(css)$/,
         loader: "style-loader!css-loader"
