@@ -17,9 +17,19 @@ const _style_promoBannerBgImg = {
 };
 
 class Signup extends React.Component {
-  constructor() {
-    super();
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      signupType: "customer"
+    };
   }
+
+  hanldeSignupType = event => {
+    this.setState({
+      signupType: event.target.id
+    });
+  };
 
   render() {
     return (
@@ -39,25 +49,50 @@ class Signup extends React.Component {
                 <div className="row">
                   <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                     <div className="signupForm-icon-holder">
-                      <img src={_img_customer_icon} alt="" />
+                      <a
+                        onClick={this.hanldeSignupType}
+                        className={
+                          this.state.signupType == "customer" ? "active" : ""
+                        }
+                      >
+                        <img id="customer" src={_img_customer_icon} alt="" />
+                      </a>
                     </div>
                     <p>Customer</p>
                   </div>
                   <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                     <div className="signupForm-icon-holder">
-                      <img src={_img_employee_icon} alt="" />
+                      <a
+                        onClick={this.hanldeSignupType}
+                        className={
+                          this.state.signupType == "employee" ? "active" : ""
+                        }
+                      >
+                        <img id="employee" src={_img_employee_icon} alt="" />
+                      </a>
                     </div>
                     <p>Employee</p>
                   </div>
                   <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                     <div className="signupForm-icon-holder">
-                      <img src={_img_contractor_icon} alt="" />
+                      <a
+                        onClick={this.hanldeSignupType}
+                        className={
+                          this.state.signupType == "contractor" ? "active" : ""
+                        }
+                      >
+                        <img
+                          id="contractor"
+                          src={_img_contractor_icon}
+                          alt=""
+                        />
+                      </a>
                     </div>
                     <p>Contractor</p>
                   </div>
                 </div>
                 <div className="container">
-                  <SignUpForm />
+                  <SignUpForm signupType={this.state.signupType} />
                 </div>
               </div>
             </div>

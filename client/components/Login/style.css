@@ -3,10 +3,22 @@
   color: #666;
   margin: 3rem 0px 2rem 0px;
 }
+
 .login-form-wrapper .loginForm-icon-holder,
 .login-form-wrapper p {
   text-align: center;
 }
+
+.loginForm-icon-holder a {
+  cursor: pointer;
+  opacity: 0.4;
+  display: inline-block;
+}
+
+.loginForm-icon-holder a.active {
+  opacity: 1;
+}
+
 .loginForm-icon-holder img {
   max-width: 60px;
   margin-bottom: 0.8rem;
@@ -22,37 +34,46 @@
 .input-row {
   margin: 2rem 0px;
 }
+
 .input-row input.form-control {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 1.1rem;
   border: 1px solid #666;
 }
+
 .input-row input::placeholder {
   color: #ccc;
 }
+
 .orangeTxt {
   color: #fca900;
 }
+
 .orangeTxt:hover {
   color: #fca900;
 }
+
 .login-form-wrapper .fp-link {
   font-size: 1rem;
   font-weight: bold;
 }
+
 .margin-bottom-1rem {
   margin-bottom: 1rem;
 }
+
 .login-form-wrapper .signup-link-holder {
   font-size: 0.8rem;
   letter-spacing: 0.03rem;
   margin: 1.8rem 0 3rem 0;
 }
+
 .login-form-wrapper .signup-link {
   padding-left: 0.5rem;
   font-weight: bold;
 }
+
 .login-form-wrapper .login-type {
   margin-bottom: 2rem;
 }

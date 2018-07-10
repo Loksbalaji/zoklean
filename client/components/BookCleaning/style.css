@@ -2,71 +2,87 @@
   padding: 2rem 0;
   background: #efefef;
 }
+
 .book-cleaning-wrapper .cleaning-selection-box,
 .book-cleaning-wrapper .billing-details-box {
   background: #fff;
 }
+
 .book-cleaning-wrapper .sec-title {
   width: 100%;
   text-align: center;
   padding: 1rem 0;
 }
+
 .book-cleaning-wrapper .sec-title h2 {
   color: #4a4a4a;
   font-size: 1.6rem;
   padding-top: 1.5rem;
 }
+
 .book-cleaning-wrapper .toggle-booking-type-holder {
   padding: 1rem 0 2rem 0;
 }
+
 .book-cleaning-wrapper .tab-link {
   margin: 0 4rem;
   opacity: 0.5;
   text-decoration: none;
+  cursor: pointer;
 }
+
 .book-cleaning-wrapper .tab-link.active {
   opacity: 1;
 }
-.book-cleaning-wrapper .tab-link .type-txt {
+
+.book-cleaning-wrapper .type-txt {
   color: #4a4a4a;
   width: 100%;
   text-align: center;
   padding-top: 0.8rem;
   font-size: 1.2rem;
 }
+
 .book-cleaning-wrapper .icon-holder {
-  width: 100%;
   text-align: center;
 }
+
 .book-cleaning-wrapper .toggle-booking-type-holder .icon-holder img {
   max-width: 65px;
   max-height: 65px;
 }
 
 /* Billing details box */
+
 .details-sec-wrapper {
   width: 100%;
   padding: 1rem 0;
 }
+
 .details-sec-wrapper .sec-list {
   padding-bottom: 1rem;
 }
+
 .details-sec-wrapper .sec-list .sec-list-tit {
   color: #aaa;
   font-size: 0.9rem;
   width: 100%;
 }
+
 .details-sec-wrapper .cleaning-type-title-holder {
   padding: 0.4rem 0;
 }
+
 .details-sec-wrapper .disp-info-row {
   font-size: 1.2rem;
   padding: 0.35rem 0;
   color: #4a4a4a;
 }
+
 .coupon-code-holder .input-coupon-text {
   padding: 1rem;
 }
+
 .coupon-code-holder .zk-green-but {
   width: 100%;
   padding: 1rem;

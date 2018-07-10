@@ -3,6 +3,7 @@
   color: #666;
   margin: 3rem 0px 2rem 0px;
 }
+
 .signup-form-wrapper .signupForm-icon-holder,
 .signup-form-wrapper p {
   text-align: center;
@@ -14,48 +15,69 @@
   background-size: cover;
 }
 
+.signupForm-icon-holder a {
+  cursor: pointer;
+  opacity: 0.4;
+  display: inline-block;
+}
+
+.signupForm-icon-holder a.active {
+  opacity: 1;
+}
+
 .signupForm-icon-holder img {
   max-width: 60px;
   margin-bottom: 0.8rem;
   max-height: 52px;
 }
+
 .signup-form-wrapper .input-row {
   margin: 1rem 0px;
 }
+
 .signup-inputs-form {
   padding: 1rem 0;
 }
+
 .input-row input.form-control {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   font-size: 1.1rem;
   border: 1px solid #666;
 }
+
 .input-row input::placeholder {
   color: #ccc;
 }
+
 .orangeTxt {
   color: #fca900;
 }
+
 .orangeTxt:hover {
   color: #fca900;
 }
+
 .signup-form-wrapper .fp-link {
   font-size: 1rem;
   font-weight: bold;
 }
+
 .margin-bottom-1rem {
   margin-bottom: 1rem;
 }
+
 .signup-form-wrapper .signup-link-holder {
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
   margin: 1.8rem 0;
 }
+
 .signup-form-wrapper .signup-link {
   padding-left: 0.5rem;
   font-weight: bold;
 }
+
 .signup-form-wrapper .tos-link {
   font-size: 0.8rem;
   font-weight: bold;
@@ -63,6 +85,7 @@
   letter-spacing: 0.03rem;
   margin: 20px 0px 0px;
 }
+
 .signup-form-wrapper .signin-link {
   margin-left: 0.4rem;
 }

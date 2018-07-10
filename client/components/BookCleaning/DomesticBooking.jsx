@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classnames from "classnames";
 import Slider, { Range } from "rc-slider";
 import Tooltip from "rc-tooltip";
+import { FormGroup, Label, Input } from "react-bootstrap";
 
 import style from "./booking.css";
 import "rc-slider/assets/index.css";
@@ -17,8 +18,8 @@ const _img_addon_service_5 = require("../../images/cleaning/addon-service-5.png"
 const _img_addon_service_6 = require("../../images/cleaning/addon-service-6.png");
 
 class DomesticBooking extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor(props, context) {
+    super(props, context);
   }
 
   render() {
@@ -48,11 +49,16 @@ class DomesticBooking extends React.Component {
                 <input type="text" placeholder="Enter Zip Code" />
               </div>
               <div className="col-12 col-sm-12 col-md-7 col-lg-7">
-                <select>
-                  <option value="" disabled selected>
-                    Select Type *
-                  </option>
-                </select>
+                <FormGroup>
+                  <Label for="domesticSelectType">Select Type*</Label>
+                  <Input type="select" name="select" id="domesticSelectType">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </Input>
+                </FormGroup>
               </div>
             </div>
 

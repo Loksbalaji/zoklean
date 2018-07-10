@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classnames from "classnames";
-import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
+import { FormGroup, FormControl } from "react-bootstrap";
 
 import style from "./style.css";
 
@@ -19,15 +19,23 @@ const _style_promoBannerBgImg = {
 class Login extends React.Component {
   constructor(props, context) {
     super(props, context);
+
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      signinType: "customer"
     };
   }
 
-  validateForm() {
+  hanldeSigninType = event => {
+    this.setState({
+      signinType: event.target.id
+    });
+  };
+
+  validateForm = () => {
     return this.state.email.length > 0 && this.state.password.length > 0;
-  }
+  };
 
   handleChange = event => {
     this.setState({
@@ -60,19 +68,58 @@ class Login extends React.Component {
                     <div className="row login-type">
                       <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                         <div className="loginForm-icon-holder">
-                          <img src={_img_customer_icon} alt="" />
+                          <a
+                            onClick={this.hanldeSigninType}
+                            className={
+                              this.state.signinType == "customer"
+                                ? "active"
+                                : ""
+                            }
+                          >
+                            <img
+                              id="customer"
+                              src={_img_customer_icon}
+                              alt=""
+                            />
+                          </a>
                         </div>
                         <p>Customer</p>
                       </div>
                       <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                         <div className="loginForm-icon-holder">
-                          <img src={_img_employee_icon} alt="" />
+                          <a
+                            onClick={this.hanldeSigninType}
+                            className={
+                              this.state.signinType == "employee"
+                                ? "active"
+                                : ""
+                            }
+                          >
+                            <img
+                              id="employee"
+                              src={_img_employee_icon}
+                              alt=""
+                            />
+                          </a>
                         </div>
                         <p>Employee</p>
                       </div>
                       <div className="col-4 col-sm-4 col-md-4 col-lg-4">
                         <div className="loginForm-icon-holder">
-                          <img src={_img_contractor_icon} alt="" />
+                          <a
+                            onClick={this.hanldeSigninType}
+                            className={
+                              this.state.signinType == "contractor"
+                                ? "active"
+                                : ""
+                            }
+                          >
+                            <img
+                              id="contractor"
+                              src={_img_contractor_icon}
+                              alt=""
+                            />
+                          </a>
                         </div>
                         <p>Contractor</p>
                       </div>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classnames from "classnames";
+import { FormGroup, FormControl } from "react-bootstrap";
 
 import style from "./style.css";
 
@@ -8,98 +9,131 @@ const _img_white_successtick = require("../../images/white-tick.png");
 class SignUpForm extends React.Component {
   constructor(props, context) {
     super(props, context);
-
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
 
     this.state = {
-      show: false
+      show: false,
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
+      email: "",
+      password: "",
+      confirmPassword: ""
     };
   }
 
-  handleClose() {
+  handleClose = () => {
     this.setState({ show: false });
-  }
+  };
 
-  handleShow() {
+  handleShow = () => {
     this.setState({ show: true });
-  }
+  };
+
+  validateForm = () => {
+    return (
+      this.state.firstName.length > 0 &&
+      this.state.lastName.length > 0 &&
+      this.state.phoneNumber.length > 0 &&
+      this.state.email.length > 0 &&
+      this.state.password.length > 0 &&
+      this.state.confirmPassword.length > 0 &&
+      this.state.password === this.state.confirmPassword
+    );
+  };
+
+  handleChange = event => {
+    this.setState({
+      [event.target.id]: event.target.value
+    });
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+    const data = new FormData(event.target);
+  };
 
   render() {
     return (
       <div>
-        <form name="" className="row signup-inputs-form font-avenir-roman">
+        <form
+          name=""
+          className="row signup-inputs-form font-avenir-roman"
+          onSubmit={this.handleSubmit}
+        >
           <div className="col-sm-12 col-md-6 col-lg-6">
-            <div className="input-group input-group-lg input-row">
-              <input
-                className="form-control"
-                aria-label="Large"
+            <FormGroup controlId="firstName" bsSize="large">
+              <FormControl
                 type="text"
                 placeholder="First Name"
+                value={this.state.firstName}
+                onChange={this.handleChange}
               />
-            </div>
+            </FormGroup>
           </div>
 
           <div className="col-sm-12 col-md-6 col-lg-6">
-            <div className="input-group input-group-lg input-row">
-              <input
-                className="form-control"
-                aria-label="Large"
+            <FormGroup controlId="lastName" bsSize="large">
+              <FormControl
                 type="text"
                 placeholder="Last Name"
+                value={this.state.lastName}
+                onChange={this.handleChange}
               />
-            </div>
+            </FormGroup>
           </div>
 
           <div className="col-sm-12 col-md-6 col-lg-6">
-            <div className="input-group input-group-lg input-row">
-              <input
-                className="form-control"
-                aria-label="Large"
+            <FormGroup controlId="phoneNumber" bsSize="large">
+              <FormControl
                 type="text"
                 placeholder="Phone Number"
+                value={this.state.phoneNumber}
+                onChange={this.handleChange}
               />
-            </div>
+            </FormGroup>
           </div>
 
           <div className="col-sm-12 col-md-6 col-lg-6">
-            <div className="input-group input-group-lg input-row">
-              <input
-                className="form-control"
-                aria-label="Large"
-                type="text"
+            <FormGroup controlId="email" bsSize="large">
+              <FormControl
+                type="email"
                 placeholder="Email"
+                value={this.state.email}
+                onChange={this.handleChange}
               />
-            </div>
+            </FormGroup>
           </div>
           <div className="col-sm-12 col-md-6 col-lg-6">
-            <div className="input-group input-group-lg input-row">
-              <input
-                className="form-control"
-                aria-label="Large"
+            <FormGroup controlId="password" bsSize="large">
+              <FormControl
                 type="password"
                 placeholder="Password"
+                value={this.state.password}
+                onChange={this.handleChange}
               />
-            </div>
+            </FormGroup>
           </div>
 
           <div className="col-sm-12 col-md-6 col-lg-6">
-            <div className="input-group input-group-lg input-row">
-              <input
-                className="form-control"
-                aria-label="Large"
+            <FormGroup controlId="confirmPassword" bsSize="large">
+              <FormControl
                 type="password"
                 placeholder="Confirm Password"
+                value={this.state.confirmPassword}
+                onChange={this.handleChange}
               />
-            </div>
+            </FormGroup>
           </div>
 
           <div className="input-group justify-content-center input-row margin-bottom-1rem">
             <div className="col-7">
               <button
-                type="button"
+                type="submit"
                 className="greenBut"
-                onClick={this.handleShow}
+                disabled={!this.validateForm()}
+                //onClick={this.handleShow}
               >
                 Sign Up
               </button>

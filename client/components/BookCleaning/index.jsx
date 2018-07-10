@@ -12,9 +12,19 @@ const _img_domestic_icon = require("../../images/home.png");
 const _img_comercial_icon = require("../../images/cleaning/office.png");
 
 class BookCleaning extends React.Component {
-  constructor() {
-    super();
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      bookingType: "domestic"
+    };
   }
+
+  hanldeBookingType = event => {
+    this.setState({
+      bookingType: event.target.id
+    });
+  };
 
   render() {
     return (
@@ -31,28 +41,49 @@ class BookCleaning extends React.Component {
 
                   <div className="toggle-booking-type-holder">
                     <div className="row justify-content-center">
-                      <a
-                        className="tab-link active"
-                        href="javascript:"
-                        title=""
-                      >
-                        <div className="icon-holder">
-                          <img src={_img_domestic_icon} alt="" />
-                        </div>
-                        <span className="row type-txt">Domestic</span>
-                      </a>
-                      <a className="tab-link" href="javascript:" title="">
-                        <div className="icon-holder">
-                          <img src={_img_comercial_icon} alt="" />
-                        </div>
-                        <span className="row type-txt">Comercial</span>
-                      </a>
+                      <div className="icon-holder">
+                        <a
+                          onClick={this.hanldeBookingType}
+                          className={
+                            this.state.bookingType == "domestic"
+                              ? "tab-link active"
+                              : "tab-link"
+                          }
+                          href="javascript:"
+                          title=""
+                        >
+                          <img id="domestic" src={_img_domestic_icon} alt="" />
+                        </a>
+                        <p className="type-txt">Domestic</p>
+                      </div>
+                      <div className="icon-holder">
+                        <a
+                          href="javascript:"
+                          title=""
+                          onClick={this.hanldeBookingType}
+                          className={
+                            this.state.bookingType == "comercial"
+                              ? "tab-link active"
+                              : "tab-link"
+                          }
+                        >
+                          <img
+                            id="comercial"
+                            src={_img_comercial_icon}
+                            alt=""
+                          />
+                        </a>
+                        <p className="type-txt">Comercial</p>
+                      </div>
                     </div>
                   </div>
 
                   <div className="booking-form-holder">
-                    <DomesticBooking />
-                    <ComercialBooking />
+                    {this.state.bookingType == "domestic" ? (
+                      <DomesticBooking />
+                    ) : (
+                      <ComercialBooking />
+                    )}
                   </div>
                 </div>
               </div>
